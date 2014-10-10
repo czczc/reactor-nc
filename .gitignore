@@ -1,0 +1,8 @@
+*.pdf
+*.aux
+*.bbl
+*.gz
+*.fdb_latexmk
+*.log
+*.blg
+reactor_nc_mainNotes.bib
