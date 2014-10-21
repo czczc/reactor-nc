@@ -6,4 +6,5 @@
 *.fdb_latexmk
 *.log
 *.blg
+*.out
 reactor_nc_mainNotes.bib
