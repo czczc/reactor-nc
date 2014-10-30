@@ -1,5 +1,6 @@
 %!TEX root = reactor_nc_main.tex
 %%%%%%%%% Section: Flux and Spectrum %%%%%%%%%
+\newpage
 \section{Reactor Neutrino Flux and Spectrum} 
 \label{sec:flux}
 
@@ -40,38 +41,36 @@ There are two principal, in many ways complementary, ways to evaluate antineutri
  While the procedure would introduce only minimum uncertainty if all decays would be of the allowed shape, the presence
  of the first forbidden decays again introduces uncertainty whose magnitude is difficult to determine accurately.
 
-
 The summation method was used
 initially in~\cite{Davis,Vogel81,Klapdor-Pu,Klapdor-U,Kopeikin} and in the updated more recent version in~\cite{Mueller, Huber}. The conversion method is based on a series
 of measurements of the electron spectra associated with fission~\cite{vonFeilitzsch,Schreckenbach,Hahn,Haag}. Naturally, the thermal power of the reactor
-and its time changing fuel composition must be known as well as the energy associated with fission of the isotopes $^{235}$U, $^{239}$Pu, $^{241}$Pu
+and its time changing fuel composition must be known as well as the energy associated with fissions of the isotopes $^{235}$U, $^{239}$Pu, $^{241}$Pu
 and $^{238}$U. In addition, small corrections to the spectrum shape of individual $\beta$ decay branches due to the radiative correction, weak magnetism,
 nuclear size,
 etc. must be correctly included. Of a particular importance, but difficult to do accurately, is to take into account the spectrum shape of the numerous
 first forbidden $\beta$ decays~\cite{Hayes}. The overall uncertainty in the flux was estimated in~\cite{Mueller, Huber} to be $\sim$ 2\%, but when the
 first forbidded decays are included it is estimated in the Ref.~\cite{Hayes} that the uncertainty increases to $\sim$ 5\%.
 
-In essentially all reactor neutrino oscillation studies the $\bar{\nu}_e$ are detected using the inverse neutron $\beta$ decay reaction
-  \begin{equation}
-  \bar{\nu}_e + p \rightarrow e^+ + n~, \\ ~ \sigma = 9.53 \frac{E_e p_e}{ 1  {\rm MeV^2}} (1 + corr.) \times 10^{-44} {\rm cm^2} ~,
-  \label{eq:detection}
-  \end{equation}
-  whose cross section is accurately known~\cite{VB99, Strumia} and depends primarily on the known neutron decay half-life (even though the recoil, radiative
-  corrections etc. must be taken into account as well). Since the neutron is so much heavier than the available energy, its kinetic energy is quite
-  small (tens of keV) and thus the principal observables are the number and energy of the positrons. Most importantly, the correlated observation of the
-  positrons and the delayed neutron captures is a powerful tool for the background suppression. Note that the reaction (\ref{eq:detection}) has
-  a threshold of 1.8 MeV, only $\bar{\nu}_e$ with energy larger than that can produce positrons. 
-  
-  In Fig.~\ref{fig:spectra} we illustrate the energy dependence of the reactor $\bar{\nu}_e$ flux, the detection reaction cross section and their product,
-  i.e. the measured antineutrino spectrum. The contributions of the individual isotopes to the $\bar{\nu}_e$ flux, weighted by their typical contribution
-  to the reactor power are also indicated. On top, the steps involved in the $\bar{\nu}_e$ capture on proton reaction are schematically indicated. 
-    
-
-\begin{figure}[htb]
+\begin{figure}[tb]
 \begin{centering}
 \includegraphics[width=\columnwidth]{figs/spec.pdf}
 \par\end{centering}
-\caption{\label{fig:spectra} Reactor $\bar{\nu}_e$ flux, inverse beta-decay cross section,
-and the interaction spectrum. Contributions of the individual isotopes to the flux, weighted by their contribution to the total are also shown.
-The steps involved in the reaction (\ref{eq:detection}) are schematically indicated on top of the figure.   }
+\caption{\label{fig:spectra} {\bf Detection of reactor $\bar{\nu}_e$.} On bottom of the figure, the reactor $\bar{\nu}_e$ flux from the individual isotopes, weighted by their typical contribution to the total flux in a commercial reactor, is shown. The detection of $\bar{\nu}_e$ relies on the inverse beta decay reaction, whose cross section is shown as the blue curve. Their product is the interaction spectrum measured by the detectors, shown as the red curve. 
+The steps involved in the detection are schematically drawn on top of the figure. The $\bar{\nu}_e$ interacts with a proton, becoming a positron ($e^+$) and a neutron. The $e^+$ quickly deposits its energy and annihilates into two 511-keV $\gamma$-rays, which gives a prompt signal. The neutron scatters in the detector until being thermalized. It then is captured by a proton $\sim$ 200 $\mu$s later and releases a 2.2-MeV $\gamma$-ray, which yields a delayed signal. The detection of this prompt-delayed signal pair indicates an $\bar{\nu}_e$ candidate.}
 \end{figure}
+
+In essentially all reactor neutrino oscillation studies the $\bar{\nu}_e$ are detected using the inverse neutron $\beta$ decay reaction
+\begin{equation}
+\bar{\nu}_e + p \rightarrow e^+ + n~, \\ ~ \sigma = 9.53 \frac{E_e p_e}{ 1  {\rm MeV^2}} (1 + corr.) \times 10^{-44} {\rm cm^2} ~,
+\label{eq:detection}
+\end{equation}
+whose cross section is accurately known~\cite{VB99, Strumia} and depends primarily on the known neutron decay half-life (even though the recoil, radiative
+corrections etc., must be taken into account as well). Since the neutron is so much heavier than the available energy, its kinetic energy is quite
+small (tens of keV) and thus the principal observables are the number and energy of the positrons. Most importantly, the correlated observation of the
+positrons and the delayed neutron captures is a powerful tool for the background suppression. Note that the reaction (\ref{eq:detection}) has
+a threshold of 1.8 MeV, only $\bar{\nu}_e$ with energy larger than that can produce positrons. 
+
+In Fig.~\ref{fig:spectra} we illustrate the energy dependence of the reactor $\bar{\nu}_e$ flux, the detection reaction cross section and their product,
+i.e. the measured antineutrino spectrum. The contributions of the individual isotopes to the $\bar{\nu}_e$ flux, weighted by their typical contribution
+to the reactor power are also indicated. On top, the steps involved in the $\bar{\nu}_e$ capture on proton reaction are schematically indicated. 
+
