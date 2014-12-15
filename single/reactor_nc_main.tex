@@ -1,0 +1,1488 @@
+\documentclass[aps,twocolumn,preprintnumbers,amsmath,superscriptaddress,amssymb,floats,nofootinbib]{revtex4-1}
+\setlength{\topmargin}{-1.cm}
+
+\usepackage{graphicx,color}
+%\usepackage{dcolumn}% Align table columns on decimal point
+%\usepackage{bm}% bold math
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}% PDF links
+%\bibliographystyle{unsrt}
+\interfootnotelinepenalty=10000
+
+\begin{document}
+
+% \title{Reactor Neutrino Oscillation Studies: Past, Present and Future}
+\title{Neutrino Oscillation Studies with Reactors}
+\date{\today}
+\author{P. Vogel}\email[]{pvogel@caltech.edu}
+\affiliation{Kellogg Radiation Laboratory, California Institute of Technology, Pasadena, California}
+\author{L. J. Wen}\email[]{wenlj@ihep.ac.cn}
+\affiliation{Institute of High Energy Physics, Beijing}
+\author{C. Zhang}\email[]{chao@bnl.gov}
+\affiliation{Brookhaven National Laboratory, Upton, New York}
+
+
+%%%%% Preface %%%%%%
+\begin{abstract}
+Nuclear reactors are one of the most intense, pure, controllable, cost-effective and well-understood sources of neutrinos. Reactors have played a major role in the study of the neutrino oscillations, a phenomenon that indicates that neutrinos have mass and that the neutrino flavors are quantum mechanical mixtures. Over the past several decades reactors were used in the discovery of neutrinos, were crucial in solving the solar neutrino puzzle, and allowed the determination of the smallest mixing angle $\theta_{13}$. In the near future, reactors will help to determine the neutrino mass hierarchy and to solve the puzzling issue of sterile neutrinos.
+\end{abstract}
+
+\maketitle
+\thispagestyle{plain}
+
+%%%%%%%%% Section: Intro %%%%%%%%%
+\section{Introduction} 
+\label{sec:intro}
+Neutrinos, particles that are, among other things, the products of  radioactive decays, are somewhat enigmatic, since they interact very weakly with anything. 
+They can travel enormous distances through matter without interacting even once. 
+Hence they are very difficult to observe. 
+Yet, understanding their properties in detail is fundamentally important and a great progress in this field has been achieved in the recent decades.   
+Study of neutrinos is opening the path for the generalization of the so-called Standard Model that explains most of what we know about the elementary particles and their interactions, but in view of most physicist is incomplete.
+
+The Standard Model of electroweak interactions,
+developed in late 1960s, incorporates neutrinos as left-handed partners of the charged leptons. Since the weak interactions are the
+only way neutrinos interact with anything, the unneeded right-handed components of the neutrino field are absent 
+by definition and neutrinos are assumed to be massless with the individual lepton numbers strictly conserved.
+This assignment was supported by the lack of observation of decays like 
+$\mu^+ \rightarrow e^+ + \gamma$ or $K_L \rightarrow e^{\pm} + \mu^{\mp}$,
+despite the long tradition of efforts to search for them.
+
+The discovery over the past several decades
+of neutrino oscillations proved that these assumptions were incorrect; it
+represents one of the very few instances that show that the otherwise
+extremely successful Standard Model is incomplete. It means that
+neutrinos have a finite mass, albeit very small, and that lepton flavor is not a conserved quantity.
+Box 1 explains the basic physics of neutrino oscillations and their relation with neutrino masses. It
+also introduces the parameters used in the oscillation formalism. Determination of all their values,
+with ever increasing accuracy,
+was and continues to be the main goal of the experiments.
+The current experimental values of the mass-squared differences $\Delta m^2_{ij}$ and of the mixing angles $\theta_{ij}$ can be found
+in the latest editions of the Review of Particle Physics~\cite{PDG14}.
+Historically, the concept of neutrino oscillations was first considered by Pontecorvo~\cite{Pontecorvo57, Pontecorvo58}
+and by Maki, Nakagawa and Sakata~\cite{MNS62}, hence the neutrino mixing matrix is usually called the PMNS matrix.
+
+The study of reactor neutrinos played a very significant part in the discovery and detailed study of neutrino oscillations and will continue 
+to be essential to its further progress. Here we briefly review
+the main points of this saga. Fig.~\ref{fig:intro1} illustrates how the flavor composition of the reactor neutrino flux, for neutrinos of 4 MeV energy
+used as an example, is expected to oscillate as a function of the distance. Experimental verification of this behavior, and the quantitative analysis of the
+results are the main topics discussed below.
+
+\begin{figure}[tb]
+\begin{centering}
+\includegraphics[width=\columnwidth]{figs/Figure-1.pdf}
+\par\end{centering}
+\caption{\label{fig:intro1} {\bf Illustration of neutrino oscillations.} The expected flavor composition of the reactor neutrino flux, for neutrinos of 4 MeV energy
+used as an example,  is plotted as a function of the distance to the reactor cores. Reactor experiments are placed at different baselines in order to measure the oscillation features driven by different mechanisms. They are usually categorized as: very short-baseline ($L\sim10$ m); short-baseline ($L\sim100$ m); kilometer-baseline ($L\sim1$ km); medium-baseline ($L\sim50$ km); and long-baseline ($L>100$ km) experiments. Details of the past and future reactor experiments, their goals and achievements, are the main topics of this article.
+}
+\end{figure}
+
+Existence of neutrinos was predicted by Pauli already in 1930~\cite{Pauli30} in his famous letter attempting to explain the continuous electron energy distribution in the nuclear beta decay. 
+Howerver, due to their weakly-interacting nature, only in 1953--1959 Reines and Cowan~\cite{Reines53,Cowan56,Reines59} were able to show that neutrinos were real particles. 
+Their observation used the electron antineutrinos emitted by a nuclear reactor and started a long tradition of fundamental discoveries using the reactor $\bar{\nu}_e$'s.
+
+In the early experiments detectors were placed at distances $L \le 100$ m~\cite{ILL,Gosgen,Rovno,Krasnoyarsk,SRP,Bugey4,Bugey3} (for a review see~\cite{Bemporad02}). As expected, no variations
+with distance were observed, but these pioneering experiments were important for the understanding of the reactor neutrino flux and spectrum.
+% , discussed in the next section. 
+The KamLAND experiment~\cite{Kamland03,Kamland05,Kamland08} in 2000s has convincingly shown that the earlier solar neutrino measurements were indeed caused by oscillations. 
+It demonstrated for the first time that the reactor neutrinos indeed oscillate, i.e. that the $\bar{\nu}_e$ component changes as predicted with $L/E_{\nu}$. 
+It also allowed the most accurate determination of the mass-squared difference $\Delta m^2_{21}$.  
+
+In the next generation of reactor experiments, Daya Bay~\cite{Dayabay,Dayabay14}, RENO~\cite{Reno}  and Double Chooz~\cite{DChooz,DChooz14}, the longstanding puzzle of the
+value of the mixing angle $\theta_{13}$ was successfully resolved; it turns out that its value $\theta_{13} \sim 8.4^\circ$
+is not as small as many physicists expected. That discovery opened opportunities for further experiments that should eventually allow us to determine the so-far missing fundamental features of the oscillations, the neutrino mass hierarchy and the phase $\delta_{CP}$ that characterizes the possible CP (charge and parity) violation. 
+The planned reactor experiments, JUNO~\cite{He-NuFact13} and RENO-50~\cite{RENO-50}, promise to be an important step on that path.
+
+Finally, most of the oscillation results are well described by the simple three-neutrino generations hypothesis. However, there are a few anomalous indications,
+the so-called reactor antineutrino anomaly~\cite{Mention} among them, that cannot be explained this way. If confirmed, they would indicate the existence of additional
+fourth or more neutrino families called sterile neutrinos. They lack weak interactions and are observable only due to their mixing with the familiar active neutrinos.  The proposed very short-baseline reactor experiments at distances $\sim$10 m might decide whether this fascinating possibility is realistic or not.
+
+
+%%%%%%%%% Section: Flux and Spectrum %%%%%%%%%
+\section{Reactor Neutrino Flux and Spectrum} 
+\label{sec:flux}
+
+Nuclear reactors derive their power from fission. The fission fragments are neutron rich and undergo a cascade of $\beta$ decays. Each act of fission
+is accompanied by approximately 6 $\beta$ decays, producing an electron and electron antineutrino each. The decay energy, typical for the nuclear
+$\beta$ decay, is a few MeV, rarely exceeding $\sim$8 MeV. Since a typical power reactor core has thermal power of about 3 GW$_{th}$, and produces
+$\sim$ 200 MeV of energy in each act of fission, the typical yield of $\bar{\nu}_e$ at equilibrium is $\sim 6 \times 10^{20} \bar{\nu}_e$ core$^{-1}$ s$^{-1}$.   
+Reactors are therefore powerful sources of low energy $\bar{\nu}_e$'s.
+
+Neutrinos can be detected when they produce charged particles, electron (mass 0.511 MeV),
+muon (mass 105.7 MeV) or tau (mass 1776.8 MeV); neutrino energy must be sufficient to
+produce them. The reactor $\bar{\nu}_e$ energy is low, thus only charged current reactions producing positrons are possible. Hence, to study neutrino oscillations with
+the nuclear reactors, one must use the disappearance type of tests, i.e.~measure the flux as a function of the distance $L$ and energy $E_{\nu}$ (see Box.~1 for the detailed formalism) and
+look for the deviation from the simple geometrical scaling. Traditionally, such measurements were compared with the expected  $\bar{\nu}_e$ spectrum
+of the reactor. Good knowledge of that spectrum, its normalization and the associated uncertainties is essential in that case.  More recent experiments
+\cite{Dayabay,Reno} use two essentially similar detectors, one nearer the reactor and another farther away, in order to reduce the dependence on the
+knowledge of the reactor spectrum.
+
+There are two principal, in many ways complementary, ways to evaluate antineutrino spectra associated with fission. 
+ The summation method uses known cumulative fission yields $Y_n (Z,A,t)$, and combines them
+ with the experimentally known (or theoretically deduced) branching ratios $b_{n,i}(E^i_0)$ of all $\beta$-decay branches with the endpoints $E^i_0$ and the
+ normalized shape function of each of these many thousands of $\beta$ decays, $P_{\bar{\nu}} (E_{\bar{\nu}},E^i_0,Z)$,
+ \begin{equation}
+ \frac{dN}{dE_{\bar{\nu}}} = \Sigma_n Y_n (Z,A,t) \Sigma_i b_{n,i}(E^i_0) P_{\bar{\nu}} (E_{\bar{\nu}},E^i_0,Z) ~.
+ \end{equation}
+ There are several difficulties with this method. The branching ratios and endpoint energies are sometimes poorly known (or not at all), in particular for
+ the short-lived fragments with large $Q$ values and many branches. The individual spectrum shape functions $P_{\bar{\nu}} (E_{\bar{\nu}},E^i_0,Z)$
+ require description of the Coulomb distortions including the nuclear finite size effects, weak magnetism, and radiative corrections. In addition, not all
+ decays are of the allowed type, there are numerous (about 25\%) first forbidden decays involving parity change, where the individual spectrum 
+ shapes are much more difficult to evaluate. 
+ 
+ \begin{figure}[tb]
+ \begin{centering}
+ \includegraphics[width=\columnwidth]{figs/Figure-2.pdf}
+ \par\end{centering}
+ \caption{\label{fig:spectra} {\bf Detection of reactor $\bar{\nu}_e$.} On bottom of the figure, the reactor $\bar{\nu}_e$ flux from the individual isotopes, weighted by their typical contribution to the total flux in a commercial reactor, is shown. The detection of $\bar{\nu}_e$ relies on the inverse beta decay reaction, whose cross section is shown as the blue curve. Their product is the interaction spectrum measured by the detectors, shown as the red curve. 
+ The steps involved in the detection are schematically drawn on top of the figure. The $\bar{\nu}_e$ interacts with a proton, becoming a positron ($e^+$) and a neutron. The $e^+$ quickly deposits its energy and annihilates into two 511-keV $\gamma$-rays, which gives a prompt signal. The neutron scatters in the detector until being thermalized. It then is captured by a proton $\sim$ 200 $\mu$s later and releases a 2.2-MeV $\gamma$-ray, which yields a delayed signal. The detection of this prompt-delayed signal pair indicates an $\bar{\nu}_e$ candidate.}
+ \end{figure}
+ 
+ The other method uses experimentally determined spectrum of electrons associated with fission of the principal reactor fuels. That spectrum has been 
+ measured at ILL Grenoble for the thermal neutron fission of $^{235}$U, $^{239}$Pu and $^{242}$Pu and recently also for the fast neutron fission of $^{238}$U
+ in Munich. These electron spectra are then transformed into the $\bar{\nu}_e$ spectra using the obvious fact that these two leptons share the total energy
+ of each $\beta$ decay branch. The transformation is based on fitting first the electron spectra to a set of 30 or more virtual branches, with the equidistant
+ endpoint spacing, determining from the fit their branching ratios. In each of these virtual branches the conversion from the electron to the $\bar{\nu}_e$ is 
+ trivial. When putting them together, one has to take into account the fact that different nuclear charges $Z$ contribute with different weights to different electron
+ and $\bar{\nu}_e$ energies. The conversion procedure was first used in~\cite{vonFeilitzsch,Schreckenbach,Hahn}, more details can be found in
+~\cite{Vogel07} and~\cite{Huber}.
+ While the procedure would introduce only minimum uncertainty if all decays would be of the allowed shape, the presence
+ of the first forbidden decays again introduces uncertainty whose magnitude is difficult to determine accurately.
+
+The summation method was used
+initially in~\cite{Davis,Vogel81,Klapdor-Pu,Klapdor-U,Kopeikin} and in the updated more recent version in~\cite{Mueller, Huber}. The conversion method is based on a series
+of measurements of the electron spectra associated with fission~\cite{vonFeilitzsch,Schreckenbach,Hahn,Haag}. Naturally, the thermal power of the reactor
+and its time changing fuel composition must be known as well as the energy associated with fissions of the isotopes $^{235}$U, $^{239}$Pu, $^{241}$Pu
+and $^{238}$U. In addition, small corrections to the spectrum shape of individual $\beta$ decay branches due to the radiative correction, weak magnetism,
+nuclear size,
+etc. must be correctly included. Of a particular importance, but difficult to do accurately, is to take into account the spectrum shape of the numerous
+first forbidden $\beta$ decays~\cite{Hayes}. The overall uncertainty in the flux was estimated in~\cite{Mueller, Huber} to be $\sim$ 2\%, but when the
+first forbidded decays are included it is estimated in the Ref.~\cite{Hayes} that the uncertainty increases to $\sim$ 5\%.
+
+In essentially all reactor neutrino oscillation studies the $\bar{\nu}_e$ are detected using the inverse neutron $\beta$ decay reaction
+\begin{equation}
+\bar{\nu}_e + p \rightarrow e^+ + n~, \\ ~ \sigma = 9.53 \frac{E_e p_e}{ 1  {\rm MeV^2}} (1 + corr.) \times 10^{-44} {\rm cm^2} ~,
+\label{eq:detection}
+\end{equation}
+whose cross section is accurately known~\cite{VB99, Strumia} and depends primarily on the known neutron decay half-life (even though the recoil, radiative
+corrections etc., must be taken into account as well). Since the neutron is so much heavier than the available energy, its kinetic energy is quite
+small (tens of keV) and thus the principal observables are the number and energy of the positrons. Most importantly, the correlated observation of the
+positrons and the delayed neutron captures is a powerful tool for the background suppression. Note that the reaction (\ref{eq:detection}) has
+a threshold of 1.8 MeV, only $\bar{\nu}_e$ with energy larger than that can produce positrons. 
+
+In Fig.~\ref{fig:spectra} we illustrate the energy dependence of the reactor $\bar{\nu}_e$ flux, the detection reaction cross section and their product,
+i.e. the measured antineutrino spectrum. The contributions of the individual isotopes to the $\bar{\nu}_e$ flux, weighted by their typical contribution
+to the reactor power are also indicated. On top, the steps involved in the $\bar{\nu}_e$ capture on proton reaction are schematically indicated. 
+
+
+%%%%%%%%% Box 1 %%%%%%%%%
+\onecolumngrid
+\vspace{12pt}
+\fboxsep=12pt
+
+\noindent\fbox{%
+    \parbox{0.96\textwidth}{%
+
+
+{\Large \textcolor{blue}{Box 1: Neutrino Oscillations}}
+\vspace{12pt}
+\setlength{\parindent}{12pt}
+
+Neutrinos are produced with a definite `flavor'. For example, in nuclear $\beta$ decay electron
+antineutrinos ($\bar{\nu}_e$) are always produced together with an electron. Similarly, if a positively charger muon ($\mu^+$) is produced in the decay of the meson $\pi^+$, the muon
+neutrino ($\nu_{\mu}$) is always produced as well. However, if  neutrinos have a finite
+mass, the flavor composition of a neutrino beam could be modified; it can vary regularly as
+a function of the distance and energy.  This behavior, called neutrino oscillations, is a subtle
+consequence of quantum mechanics that postulates that a neutrino of a given flavor need
+not be a state of a definite mass, but it could be instead a coherent superposition of several states
+of definite messes. Here we explain the basic ideas of this phenomenon.
+
+Let us assume that there are two massive neutrinos $\nu_i, i=1,2$ with different masses $m_i$. When they propagate in vacuum over a distance $L$,
+each acquires the phase $\nu_i(L) = \nu_i (0) \exp(-i m^2_i L/2E)$. (The overall phase is skipped and it is assumed that the neutrinos are highly relativistic,
+$p \sim E - m^2/2E$. Additional phases are acquired when neutrinos propagate in the matter, so-called the ``MSW effect''~\cite{Wolfenstein78,MS85}, which for simplicity will not be discussed here.) Assume further that the flavor neutrinos $\nu_e$ and $\nu_{\alpha}$, i.e. the neutrinos that are the partners of
+charged leptons in the weak interactions, are coherent superpositions of the states $\nu_i$, i.e. $\nu_e = \cos \theta \nu_1 + \sin \theta \nu_2$, and
+analogous but orthogonal combination represents the other flavor neutrino $\nu_{\alpha} = -\sin \theta \nu_1 + \cos \theta \nu_2$. This 
+mixture is characterized by the parameter $\theta$, so-called mixing angle.  
+
+Consider now a beam of neutrinos that at $L=0$ is pure $\nu_e$. Then
+\begin{equation}
+\nu_e (L) = \cos \theta e^{-i m_1^2 L/2E} \nu_1(0) + \sin \theta e^{-i m_2^2 L/2E} \nu_2 (0) ~.
+\end{equation}
+In order to observe this beam at $L$ we must use the weak interactions. Hence we must project the $\nu_i$ back to the flavor basis $\nu_e$ and $\nu_{\alpha}$.
+Thus
+\begin{equation}
+\nu_e (L) = [\cos^2 \theta e^{-i m_1^2 L/2E} + \sin^2 \theta e^{-i m_2^2 L/2E}] \nu_e(0) - 
+\sin \theta \cos \theta [e^{-i m_1^2 L/2E} - e^{-i m_2^2 L/2E}] \nu_{\alpha}(0) ~.
+\end{equation}
+The probability that we detect $\nu_e$ at the distance $L$ is just the square of the corresponding amplitude. The probability
+of detecting $\nu_{\alpha}$ is the corresponding square of that amplitude. Therefore, after a bit of a simple algebra,
+\begin{equation}
+P(\nu_e \rightarrow \nu_e) = 1 - \sin^2 2 \theta \sin^2 \frac{\Delta m^2 L}{4 E} ~,~ P(\nu_e \rightarrow \nu_{\alpha}) =  \sin^2 2 \theta \sin^2 \frac{\Delta m^2 L}{4 E} ~,
+\end{equation}
+where $\Delta m^2 = m^2_2 - m^2_1$ is the difference of the squares of the neutrino masses. 
+
+Thus, we see that, provided $\Delta m^2 \ne 0$ and if $\theta \ne 0$ or $\pi/2$, the composition of the neutrino beam oscillates as a function of $L/E_{\nu}$ 
+with the amplitude $\sin^2 2 \theta$ and wavelength
+\begin{equation}
+L_{osc} = 4 \pi \frac{E}{\Delta m^2} ~~\equiv ~~ L_{osc} ({\rm m}) = \frac{2.48 E {\rm (MeV)}}{ \Delta m^2 {\rm (eV^2)}} ~. 
+\end{equation}
+
+Observation of neutrino oscillations, therefore, constitutes a proof that at least some of the neutrinos have a finite mass and that the superposition is
+a nontrivial one. Generalization to the realistic case of three neutrino flavors and three
+states of definite mass is straightforward. The corresponding mixing is then characterized by three mixing angles $\theta_{12}, \theta_{13}, \theta_{23}$,
+ one possible $CP$ violating phase $\delta_{CP}$,
+and two mass square differences $\Delta m^2_{21}$ and  $\Delta m^2_{31}$. The third mass square difference 
+$\Delta m^2_{32} = m^2_3 - m^2_2 \equiv \Delta m^2_{31} - \Delta m^2_{21}$ is simply related
+to those two. 
+
+Neutrino oscillations have no classical analog. They are purely quantum-mechanical phenomenon, consequence of the coherence of the
+superposition of states.
+
+    }%
+}
+
+\vspace{10pt}
+
+\twocolumngrid
+
+
+%%%%%%%%% Section: KamLAND %%%%%%%%%
+\section{Exploring Solar Neutrino Oscillations on Earth} 
+\label{sec:kamland}
+
+Since the late 1960s, a series of solar neutrino experiments~\cite{Homestake,GALLEX,SAGE,Kamiokande,Super-Kamiokande} have observed a large deficit of solar $\nu_e$ flux relative to the Standard Solar Model (SSM)~\cite{Bahcall} prediction. 
+It appeared that more than half of the solar neutrinos were missing. 
+This was referred to as the ``Solar Neutrino Problem''. 
+In 2001, the SNO experiment~\cite{SNO} successfully measured the total flux of all three neutrino flavors through the neutral current channel $\nu + d \to \nu + p + n$ using heavy water as a target, and yielded consistent results with the SSM. 
+The SNO result is considered as the ``smoking gun'' evidence of the neutrino oscillation explanation to the Solar Neutrino Problem --- The solar neutrinos, produced as electron-neutrinos from fusion inside the Sun, have transformed into other flavors when they arrive at the Earth.
+
+\begin{figure*}[htb] \label{fig:kamland}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figs/Figure-3.pdf}
+  \caption{{\bf The KamLAND results~\cite{Kamland08}.} (left) The data points show the measured prompt energy spectrum of $\bar\nu_e$ candidate events. The shaded histograms show the expected backgrounds. The expected reactor spectra without oscillation and with best-fit oscillation are shown as the dashed histogram. All histograms incorporate the energy-dependent selection efficiency, which is shown on the top. Only $\sim$60\% of reactor $\bar\nu_e$'s are observed relative to the no-oscillation expectation. 
+  % Statistical uncertainties are shown for the data; the band on the blue histogram indicates the event rate systematic uncertainty. 
+  (right) The data points show the ratio of the background-subtracted
+  $\bar\nu_e$ spectrum to the expectation for no-oscillation as a
+  function of $L_{0}/E_{\nu}$. $L_{0}$ is the effective baseline taken as a
+  flux-weighted average ($L_{0}$\,=\,180\,km). The spectrum indicates almost two cycles of periodic feature as expected from neutrino oscillations. The oscillation survival probability using the best estimates of $\theta_{12}$ and $|\Delta{m}^2_{21}|$ is given by the blue curve.}
+\end{figure*}
+
+The solar neutrino experiments left several possible solutions in the oscillation parameter space of $\theta_{12}$ and $\Delta m^2_{21}$. 
+A precise measurement of these parameters and demonstration of the oscillatory feature, however, is hindered by the relatively large uncertainty of the solar $\nu_{e}$ flux predicted by the SSM, the large matter effect inside the Sun, and the extremely long distance the neutrinos travel. 
+A reactor neutrino experiment, measuring the same disappearance channel as the solar neutrino experiments assuming $CPT$ invariance, overcomes these difficulties. 
+With well-understood and controllable $\sim$MeV $\bar\nu_e$ source, a reactor experiment at $\sim$100 km baselines can explore with high precision the so-called ``Large Mixing Angle (LMA)'' parameter region suggested by the solar neutrino experiments. To do that, the KamLAND experiment~\cite{Kamland03} was built in early 2000s to explore the solar neutrino oscillations on Earth.
+
+In order to shield against the cosmic rays, the KamLAND detector was placed at the site of the former Kamiokande experiment~\cite{Kamiokande} under the summit of Mt.~Ikenoyama in the Japanese Alps. 
+The vertical overburden is 2700 meter-water-equivalent (m.w.e). 
+It is surrounded by 55 Japanese nuclear reactor cores, which then produced about 30\% of the total electricity in Japan. 
+The $\bar\nu_e$ flux-weighted average baseline is about 180 km, well suited for KamLAND to study the parameters suggested by the solar neutrino experiments. 
+The reactor operation information such as thermal power, fuel burn-up, and fuel exchange and enrichment records are provided by all Japanese reactors, which allows KamLAND to calculate the instantaneous fission rate of each isotope accurately. 
+
+The KamLAND detector consists of 1 kton of highly purified liquid scintillator (LS), enclosed in a 13-m-diameter transparent balloon suspended by ropes in mineral oil (MO). 
+The MO is housed inside a 18-m-diameter stainless steel (SS) sphere, where an array of 1879 20-inch photomultiplier tubes (PMTs) is mounted. 
+The MO shields the inner LS region from external radiation from PMTs and SS. 
+3.2 kton of purified water is used to provide further shielding against ambient radiation and operates as an active cosmic muon veto detector. 
+With regular central-axis deployments of radioactive sources and dedicated off-axis deployments~\cite{KamLAND-4pi}, KamLAND achieved an excellent position resolution of $12$ cm$/\sqrt{E(\textrm{MeV})}$, energy resolution of $6.5\%/\sqrt{E(\textrm{MeV})}$, and absolute energy-scale uncertainty of 1.4\%.
+
+Even with such powerful reactor $\bar\nu_e$ sources and a massive detector, the long baseline suppresses the expected signal at KamLAND to only about one reactor $\bar\nu_e$ event per day. 
+In comparison, the background from internal and external radioactivity is one million times higher. 
+The experiment is only possible thanks to the powerful coincidence signature (the positron followed by the delayed neutron capture $\gamma$) of inverse beta decay, as illustrated in Fig.~\ref{fig:spectra}. 
+A time difference of less than 1 millisecond and distance less than 2 meters between the prompt and delayed signals is required in the analysis. 
+Only the innermost 6-m-radius scintillator region is used to reduce the accidental coincidence from external radioactivity. 
+Information about the event energy, position, and time were used to further reduce the accidental background to $\sim$5\% of the candidates.
+
+The other dominant background ($\sim$10\%) at KamLAND is caused by the $^{13}$C$(\alpha,n)^{16}$O reaction where the $\alpha$-decay comes from $^{210}$Po, a daughter of $^{222}$Rn introduced into the scintillator during construction. 
+The neutron scattering off proton or $^{16}$O$^*$ de-excitation produces a prompt signal, followed by a neutron capture delayed signal. This then mimics a true $\bar\nu_e$ event. The rest of the backgrounds include: the antineutrinos produced in the decay chains of $^{232}$Th and $^{238}$U in the Earth's interior (geoneutrinos); the cosmogenic beta delayed-neutron emitters $^{9}$Li and $^{8}$He;  the fast neutrons from muons passing through the surrounding rock, as well as atmospheric neutrinos. 
+
+Fig.~\ref{fig:kamland} (left) shows the prompt energy spectrum of $\bar\nu_e$ candidate
+events, observed with 2.9 kton$\cdot$year exposure, overlaid with the expected reactor $\bar\nu_{e}$ and background spectra. A total of 1609 events were observed, which is only about 60\% of the expected signal if there is no oscillation. The ratio of the background-subtracted $\bar\nu_e$ candidate events to no-oscillation expectation is plotted in Fig.~\ref{fig:kamland} (right) as a function of $L/E_{\nu}$. The spectrum indicates almost two cycles of the periodic feature as expected from neutrino oscillations, strongly disfavoring other explanations of the $\bar\nu_e$ disappearance.
+
+The KamLAND results~\cite{Kamland03,Kamland05,Kamland08} are highly consistent with the solar neutrino experiments, and has pinned down the solar neutrino oscillation solution to the LMA region. When combined with the results from SNO, it yields the most precise measurements of $\tan^2\theta_{12} = 0.47^{+0.06}_{-0.05}$ and $\Delta m^2_{21} = 7.59^{+0.21}_{-0.21} \times 10^{-5}$ eV$^2$. It marks the beginning of a precision era in the neutrino oscillation experiments.
+
+
+%%%%%%%%% Section: Theta_13 Experiments %%%%%%%%%
+\section{Searching for the Smallest Oscillation Angle} 
+\label{sec:theta13}
+In contrast to the  Cabibbo-Kobayashi-Maskawa (CKM) matrix in quark mixing, where all three mixing angles are very small~\cite{PDG14}, the mixing angles in the neutrino mixing matrix appear to be large: $\theta_{23}$, measured by the atmospheric~\cite{Kajita} and long-baseline accelerator~\cite{Feldman} neutrino experiments, is about $45^\circ$; and $\theta_{12}$, measured by the solar neutrino experiments and KamLAND, is about $33^\circ$. It was therefore natural to expect the third mixing angle, $\theta_{13}$, to be of similar magnitude.
+
+\begin{figure*}[tb] \label{fig:dayabay}
+  \centering
+  \includegraphics[width=0.95\textwidth]{figs/Figure-4.pdf}
+  \caption{{\bf The Daya Bay results~\cite{Zhang-Neutrino14}.} (left) The data points show the ratio of the detected to expected no-oscillation $\bar\nu_{e}$ signals at the 8 antineutrino detectors (ADs) located in three experimental halls as a function of effective baseline. A $\sim$6\% signal deficit at the far hall relative to the near halls is observed. The oscillation survival probability at the best-fit value is given by the red curve.
+  (right) The data points show the ratio of the background-subtracted $\bar\nu_e$ spectrum to the expectation for no-oscillation in the three experimental halls as a function of $L_{\textrm{eff}}/E_{\nu}$. The effective baseline $L_{\textrm{eff}}$ is determined for each experimental hall (EH) equating the multi-core oscillated flux to an effective oscillated flux from a single baseline. A near-complete cycle of the expected periodic oscillation feature is observed. The oscillation survival probability using the best estimates of $\theta_{13}$ and $|\Delta{m}^2_{31}|$ is given by the red curve.}
+\end{figure*}
+
+The cleanest way to measure $\theta_{13}$ is through kilometer-baseline reactor neutrino oscillation experiments. As shown in Fig.~\ref{fig:intro1}, the reactor $\bar\nu_e$ oscillation at $\sim$km is dominated by the $\theta_{13}$ terms. Unlike accelerator neutrino experiments, the reactor measurements are independent of the CP phase and $\theta_{23}$, and only slightly dependent on the neutrino mass hierarchy and matter effect. A high precision measurement can therefore be achieved.
+
+In 1990s, two first-generation kilometer-baseline reactor experiments, CHOOZ~\cite{Chooz} and PALO VERDE~\cite{Paloverde} were constructed to measure $\theta_{13}$. 
+The CHOOZ detector was built at a distance of $\sim$1050 m from the two reactors of the CHOOZ power plant of \'{E}lectricite\'{d}e France in the Ardennes region of France. It took data from April 1997 until July 1998. 
+The PALO VERDE detector was built at distances of 750, 890 and 890 m from the three reactors of the Palo Verde Nuclear Generating Station in the Arizona desert of the United States. It took data between October 1998 and July 2000. 
+Surprisingly, neither experiment was able to observe the $\bar\nu_e$ deficit caused by $\theta_{13}$ oscillation. 
+As a result, only an upper limit of $\sin^22\theta_{13} < 0.11$ at 90\% C.L. was obtained~\cite{Chooz}.
+
+The null results from CHOOZ and PALO VERDE, combined with the measured values of $\theta_{23}$ and $\theta_{12}$, motivated many phenomenological speculations of neutrino mixing patterns such as bimaximal and tribimaximal mixing~\cite{Harrison,Altarelli}. 
+In most of these theories, $\theta_{13}$ is either zero or very small. 
+A direct consequence of a vanishing $\theta_{13}$ is that the CP violation in the leptonic sector, even if large, can never be observed in the neutrino oscillation experiments. 
+The importance of knowing the precise value of $\theta_{13}$ provoked a series of world-wide second-generation kilometer-baseline reactor experiments in the 21st century, including Double Chooz~\cite{DChooz} in France, RENO~\cite{Reno} in Korea and Daya Bay~\cite{Dayabay} in China, to push the sensitivity to $\theta_{13}$ to much below $10^\circ$. 
+Table~\ref{tab:theta13} summarizes some of the key parameters of the five aforementioned experiments.
+
+\begin{table}[tb]
+  \begin{tabular}{lcccc}
+  \hline
+  & Power & Baseline & Mass & Overburden \\
+  & (GW$_{th}$) & (m) & (ton) & (m.w.e)    \\
+  \hline
+  CHOOZ        & 8.5  & 1050  & 5    & 300\\
+  PALO VERDE   & 11.6 & 750--890  & 12  & 32\\
+  \hline
+  Double Chooz & 8.5  & 400  & 8  & 120\\
+               &      & 1050 & 8  & 300\\
+  RENO         & 16.8 & 290  & 16   & 120\\
+               &      & 1380 & 16   & 450\\
+  Daya Bay     & 17.4 & 360  & 2$\times$20   & 250\\
+               &      & 500  & 2$\times$20   & 265\\
+               &      & 1580 & 4$\times$20   & 860\\
+  % 1998\tablenote{predicted} & 200 & 300 & 1500  & 2000\\
+  \hline
+  \end{tabular}
+  \caption{{\bf Key parameters of the reactor $\theta_{13}$ experiments.} The table summarizes the key parameters of the five past and present reactor $\theta_{13}$ experiments, including the reactor thermal power (in giga-watts), distance to reactors, target mass of the detectors, and overburden of the underground site (in meter-water-equivalent).}
+\label{tab:theta13}
+\end{table}
+
+A common technology used in both the first and second generation experiments is the gadolinium-loaded liquid scintillator as $\bar\nu_{e}$ detection target. Gd has a high thermal neutron capture cross section. With $\sim$0.1\% gadolinium loading, the neutron capture time is reduced to $\sim$28 microseconds from $\sim$200 microseconds for the un-loaded scintillator (as is used in KamLAND.) Furthermore, Gd deexcitation after the capture releases an 8-MeV gamma-ray cascade, which gives a delayed signal well above natural radioactivity (in contrast, neutron capture on proton releases a single 2.2-MeV $\gamma$). The accidental coincidence background is therefore drastically reduced.
+
+The most significant improvement of the second-generation experiments over the previous ones is the addition of near detectors at baselines of a few hundred meters. 
+As discussed in Section II, the uncertainty in predicting the reactor antineutrino flux is relatively large (2--5\%.) 
+This flux uncertainty, however, can be largely canceled from a relative measurement between near and far detectors. 
+The Double Chooz experiment expands CHOOZ by adding a near detector at a distance of $\sim$400 m. 
+The installation of the near detector, however, was delayed due to civil construction. 
+Double Chooz started taking data in May 2011 with only a far detector, and used the Bugey4 measurement~\cite{Bugey4} to normalize the reactor flux. 
+The RENO experiment was built near the six reactors of the Yonggwang nuclear power plant in Korea. 
+The two identical detectors were located at 290 and 1380 m, respectively, from the center of reactor array. 
+RENO started taking data in August 2011. 
+The Daya Bay experiment was built near the six reactors of the Daya Bay nuclear power plant in southern China. 
+Daya Bay had eight identical antineutrino detectors (ADs). 
+Two ADs were placed at $\sim$360 m from the two  Daya Bay reactor cores. 
+Two ADs were placed at $\sim$500 m from the four Ling Ao reactor cores. 
+And four ADs were placed at a far site $\sim$1580 m away from the 6-reactor complex. 
+This modular detector design further allows Daya Bay to largely remove the correlated detector systematics. 
+Daya Bay started taking data in December 2011.
+
+Compared to the first-generation experiments, the second-generation experiments have much larger statistics by utilizing higher power reactors and larger detectors. Among them, Daya Bay has the largest reactor power (17.4 GW$_{th}$) and target mass (80 tons at the far site,) as shown in Table~\ref{tab:theta13}. 
+The underground sites are much deeper to allow better shielding from cosmogenic background, in particular compared to the case of PALO VERDE. 
+Better chemical recipes of the gadolinium-loaded liquid scintillator also improves the overall detector performance and long term stability.
+
+The second-generation reactor experiments were a huge success. 
+In 2012, all three experiments, Double Chooz, Daya Bay and RENO, reported clear evidences of $\bar\nu_{e}$ disappearance at $\sim$kilometer baselines with only a few month's running~\cite{DChooz,Reno,Dayabay}. 
+In particular, Daya Bay excluded $\theta_{13}=0$ by 5.2 standard deviation with 55 days of data~\cite{Dayabay}. 
+The precision of the $\theta_{13}$ measurement improves quickly with more data.
+Fig.~\ref{fig:dayabay} (left) from Daya Bay, with the data collected through November 2013~\cite{Zhang-Neutrino14}, shows the ratio of the detected to expected no-oscillation $\bar\nu_{e}$ signals at the 8 detectors located in the three experimental halls, as a function of effective baseline.
+The signal rate at the far site shows a clear $\sim$6\% deficit with respect to the near sites, and fits nicely to the theoretical oscillation curve (in red) with $\sin^22\theta_{13} = 0.084 \pm 0.005$. 
+Although last known, the precision in $\theta_{13}$ measurement (6\%) is now the best among all three mixing angles.
+
+Similar to KamLAND, the ratio of the detected $\bar\nu_{e}$ events to no-oscillation expectation at Daya Bay is plotted in Fig.~\ref{fig:dayabay} (right) as a function of $L/E_{\nu}$. 
+The combined data from the three experimental halls show a near-complete cycle of the expected periodic oscillation feature. 
+The smaller amplitude and shorter wavelength of the oscillation, compared to the case of KamLAND, indicate the different oscillation component driven by $\theta_{13}$ and $\Delta{m}^2_{31}$. 
+The best-fit frequency of the oscillation yields $|\Delta{m}^2_{31}| = 2.47^{+0.11}_{-0.10} \times 10^{-3}$ eV$^2$ (assuming normal mass hierarchy), which is in good agreement and of comparable precision with the results from atmospheric and long-baseline accelerator neutrino experiments. 
+By the end of 2017, Daya Bay expects to measure both $\sin^22\theta_{13}$ and $|\Delta{m}^2_{31}|$ to precisions below 3\%~\cite{Zhang-Neutrino14}.
+
+The longstanding puzzle of the value of $\theta_{13}$ is now successfully resolved.
+The relatively large value of $\theta_{13}$ opens the gateway for future experiments to determine the neutrino mass hierarchy and measure the CP-violating phase in the leptonic sector.
+
+
+%%%%%%%%% Section: Mass Hierarchy: JUNO %%%%%%%%%
+\section{Determination of Neutrino Mass Hierarchy}
+
+At present, only the absolute values of the neutrino mass-squared differences $\Delta m^2_{32}$ and $\Delta m^2_{31}$ are known, not their sign. 
+Depending whether $\Delta m^2_{31}>0$ or $\Delta m^2_{31}<0$, the neutrino mass ordering is usually referred as normal or inverted mass hierarchy, respectively. 
+% The neutrino mass hierarchy has important impacts on many important fundamental topics in particle physics, astrophysics and cosmology. 
+The neutrino mass hierarchy (MH) is a problem of the fundamental importance~\cite{MHwhitepaper}.
+Determination of the MH represents an important step in the formulation of the Generalized Standard Model of particle physics. 
+It will reduce the uncertainty in the experiments aiming at the measurement of the CP-violating phase. 
+It will help in defining the goals of the forthcoming neutrinoless double beta decay experiments.
+It will also improve our understanding of the core-collapse supernovae.
+
+The reactor $\bar\nu_e$-oscillation frequency is modulated by $\Delta m^2_{31}$ and $\Delta m^2_{32}$. 
+At a medium baseline of $\sim$60 km, multiple small-amplitude $\theta_{13}$ oscillation peaks show up on top of the long wavelength $\theta_{12}$ oscillation, as shown in Fig.~\ref{fig:intro1}.
+Depending whether the MH is normal or inverted, this oscillation pattern shifts slightly.
+The MH information can be extracted by using a likelihood analysis~\cite{Li-PRD13} or a Fourier transform method~\cite{Zhan-PRD08,Zhan-PRD09}. 
+Additional information regarding the neutrino MH could be obtained by combining with the long-baseline muon neutrino disappearance experiments~\cite{Minakata}, as the effective mass-squared differences measured there is a different combination of $\Delta m^2_{31}$, $\Delta m^2_{32}$ and other oscillation parameters.
+
+Two medium-baseline reactor experiments, JUNO~\cite{He-NuFact13} in China and RENO-50~\cite{RENO-50} in Korea, have been proposed, both aiming to start data taking in 2020. JUNO is currently under construction. In the following, we will use JUNO as an example to illustrate the significant challenges in building such a large experiment. 
+
+% Jiangmen Underground Neutrino Observatory (JUNO), currently under construction, will be a multi-purpose experiment with the primary goals to determine the neutrino mass hierarchy and precisely measure the neutrino oscillation parameters with reactors.
+%JUNO also provide great physics opportunities in other topics, e.g, observe neutrinos from supernova, Earth interior and Sun, search atmospheric and sterile neutrinos and perform other exotic searches.
+The JUNO collaboration currently consists of 48 institutions from 9 countries or regions with $\sim$330 members.
+The experiment is located in Kaiping city, Guangdong province, in south of China, about 150 km west of Hong Kong. The JUNO detectors will be underground with a total vertical overburden of 1800 m.w.e. JUNO observes $\bar\nu_e$ from the Yangjiang nuclear power plant (NPP) and the Taishan NPP at an equal baseline of $\sim$53 km, as illustrated in Fig.~\ref{fig:juno}, near the maximal $\theta_{12}$-oscillation baseline. The Yangjiang NPP has six reactors cores of 2.9 GW$_{th}$ each and the Taishan NPP has planned four cores of 4.6 GW$_{th}$ each, both are under construction. The baseline difference to the two NPPs is controlled to less than 500 m to prevent significant degradation of the MH discrimination power~\cite{Li-PRD13}.
+
+The JUNO detectors are being designed. The preliminary design has a central detector submerged in a water pool with the muon trackers installed on the top of the pool. 
+The water pool is equipped with PMTs and acts as an active Cherenkov detector for muon veto. 
+It also provides passive shielding against the natural radioactivities from the surrounding rock and air. 
+The top muon trackers can provide complementary track measurements of the cosmic muons. 
+The central detector of JUNO consists of 20 kton of liquid scintillator (LS), contained in a spherical acrylic tank (the ``Acrylic Sphere'' option), or a thin-film transparent balloon (the ``Balloon'' option). 
+In the ``Acrylic Sphere'' option, the acrylic tank is supported by double-layered stainless steel frames. 
+The buffer liquid between the acrylic tank and the supporting frames is water, which is physically connected with but optically separated from the outside water Cherenkov detector. 
+In the ``Balloon'' option, the buffer liquid is non-scintillating linear-alkylbenzene (LAB) contained in a 40-m-radius stainless steel sphere, where the PMTs are mounted. 
+For both options, the PMTs will be protected from implosion by acrylic enclosures. 
+Taking into account the implosion container and mechanical clearance, the maximal photocathode coverage is 75\%--78\% for various options by installing $\sim$18000 PMTs.
+
+An energy resolution better than $3\%/\sqrt{E(\textrm{MeV})}$ is essential for JUNO to maintain the MH discrimination ability~\cite{Li-PRD13}. 
+To achieve that, from Monte Carlo simulation, beside keeping a maximal photocathode coverage, additional technical improvements are necessary: 
+1) use high quantum efficiency (QE) PMTs to increase the light detection efficiency;
+2) increase the light yield of the LS;
+3) improve the optical transparency of the LS.
+A new type of 20-inch, high-efficiency PMT is being developed by JUNO. Instead of using the traditional dynode, the new PMT design uses micro-channel plate (MCP) to have a near-4$\pi$ collection of the photoelectrons. 
+Using the super bialkali photocathode, the QE is expected to reach to 35\%. 
+Better light yield can be achieved by optimizing the concentration of fluors. 
+Purification of the raw solvent and fluors, combining with on-line purification using Al$_2$O$_3$ column filtration, has been found to be effective in increasing the optical transparency of the LS. An attenuation length of $\sim$30 m (at 430 nm wavelength) is desired.
+
+Calibration of the absolute energy scale is crucial. 
+In particular, three main effects cause non-linear energy response for a LS detector: scintillator quenching, Cherenkov radiation and possible non-linear electronics response. 
+If the energy non-linearity correction has large uncertainties, particular residual non-linear shapes may fake the oscillation pattern with a wrong mass hierarchy~\cite{Qian-PRD13}. 
+The absolute energy scale uncertainty needs to be controlled to a few tenths of a percent. 
+This is expected to be achievable with the experience from Daya Bay~\cite{Zhang-Neutrino14}, however, it requires a comprehensive calibration program for a large detector such as JUNO.
+% Interestingly, the multiple $\theta_{13}$ oscillation peaks in the measured $L/E$ spectrum can be utilized to constrain the energy scale~\cite{Li-PRD13}.
+
+JUNO expects to detect about 60 reactor $\bar\nu_e$ events per day. The expected energy spectrum after 6 years is shown in Fig.~\ref{fig:juno}.
+The sources of background at JUNO are similar to those of KamLAND. 
+However, it is challenging to veto the cosmogenic $^9$Li and $^8$He background at JUNO, due to the larger size, shallower depth and therefore higher muon rate ($\sim$3 Hz, about 15 times higher than KamLAND) at JUNO. 
+The $^9$Li and $^8$He isotopes are mostly produced by the muons accompanied by large electromagnetic or hadronic showers~\cite{KamLAND-spall}. In KamLAND, if a shower muon is tagged, the whole detector is vetoed for 2 s. Such a veto strategy could lead to a significant signal loss at JUNO. 
+Since the lateral distance of the isotopes from the parent muon trajectory is roughly exponential~\cite{KamLAND-spall}, a small veto region along the muon track can efficiently remove the background with minimal loss of signals. Thus, the ability to track the shower muons in JUNO is essential, which demands new developments in the muon veto system as well as the simulations and reconstructions.
+
+\begin{figure}[tb] \label{fig:juno}
+  \centering
+  \includegraphics[width=\columnwidth]{figs/Figure-5.pdf}
+  \caption{{\bf JUNO's layout and expected signal.} JUNO is located in southern China at an equal baseline of $\sim$53 km from the powerful reactors at Yangjiang and Taishan. The shaded histograms in the insert show the expected $\bar\nu_e$ energy spectra at JUNO with and without backgrounds after 6 years' running. The multiple-oscillation structure allows for a determination of neutrino mass hierarchy and precision measurement of the oscillation parameters.}
+\end{figure}
+
+The sensitivity of the mass hierarchy determination at JUNO is expected to exceed 3$\sigma$ (for the statistical interpretations see~\cite{Qian-Stat,Blennow}) after taking into account the realistic systematic uncertainties~\cite{Li-PRD13,MBRwitepaper}. 
+Assuming that the effective mass-squared difference measured by the ongoing accelerator experiments can achieve 1.5--1\% precision~\cite{Agarwalla}, the MH sensitivity at JUNO can be improved to 3.7--4.4$\sigma$~\cite{Li-PRD13}. 
+In addition, JUNO has great potentials in the precision measurements of the neutrino oscillation parameters. JUNO expects to measure $\Delta m^2_{21}, |\Delta m^2_{31}|$ and $\sin^2 \theta_{12}$ to precisions better than 1\%. This offers a major step toward the unitarity test of the neutrino mixing matrix~\cite{unitarity13} and is important to guide the directions of future experiments and theories. 
+% The JUNO collaboration currently consists of 48 institutions from 9 countries or regions, with a total number of 329 members. JUNO expects to start data taking in 2020.
+
+RENO-50~\cite{RENO-50}, a proposed medium-baseline reactor experiment in Korea, has similar scientific goals as JUNO and is facing similar challenges. RENO-50 plans to build an underground detector consisting of 18 kton ultra low-radioactivity liquid scintillator and 15,000 20-inch PMTs, at $\sim$50 km away from the Hanbit (Yonggwang) nuclear power plant in Korea. RENO-50 expects to start data taking around 2019--2020.
+
+The next-generation medium-baseline reactor experiments provide a unique opportunity to determine the neutrino mass hierarchy with the precision measurement of the reactor neutrino spectrum.
+Most systematic effects are well-understood and studied, although the technical challenges are significant. 
+The MH sensitivity is expected to reach 3--4$\sigma$.
+The reactor measurements are independent of $\theta_{23}$, the CP-violating phase, and the matter effect. 
+They will be complementary to the future long-baseline accelerator~\cite{LBNE} and atmospheric~\cite{PINGU} neutrino oscillation programs. 
+
+
+%%%%%%%%% Section: Sterile Neutrinos: Very Short Baseline %%%%%%%%%
+\section{Searching for Sterile Neutrinos}
+
+The number of light active neutrino flavors was determined from the precision electroweak measurements of the decay width of the Z boson to be three~\cite{EW-2005}. 
+Such a three-neutrino framework has been extremely successful in explaining the measurements from neutrino oscillation experiments. 
+Namely, only two oscillation frequencies, corresponding to the two mass-squared differences ($\Delta m_{21}^2\sim7.6\times10^{-5}$ eV$^2$ and $|\Delta m_{31}^2|\sim2.4\times10^{-3}$ eV$^2$), were observed by the solar, atmospheric, accelerator and reactor neutrino oscillation experiments. 
+However, in the early 2000s, the LSND experiment~\cite{LSND2001} reported anomalous event excesses in the $\bar\nu_\mu\rightarrow\bar\nu_e$ appearance channel, which could be interpreted as an oscillation at $\Delta m^2\sim1$ eV$^2$ scale. 
+The LSND result contradicted the three-neutrino framework in the Standard Model, thus was often referred to as the ``LSND anomaly''.
+
+The LSND anomaly, therefore, could indicate the existence of additional
+fourth or more neutrino families. 
+Since they have light masses (m $\sim$ 1 eV) but do not couple to the Z bosons, they must lack weak interactions and are therefore called sterile neutrinos. 
+They are observable only through their sub-dominant mixing with the familiar active neutrinos. 
+The light sterile neutrinos, coincidentally, are also among the leading candidates to resolve outstanding puzzles in astrophysics and cosmology~\cite{Dodelson,Kusenko,Wyman,Battye}.
+On the other hand, the light sterile neutrinos are generally not natural in the theories that extend the neutrino Standard Model. 
+For example, the popular type-I see-saw model~\cite{Minkowski,Yanagida,GellMann,Mohapatra}, which provides an elegant explanation to the small neutrino masses and the matter-antimatter asymmetry of the universe~\cite{Fukugita}, only naturally predicts heavy sterile neutrinos (m $>10^{10}$ eV).
+If the light sterile neutrinos indeed exist as LSND indicates, they would suggest new frontiers in both experimental and theoretical physics.
+
+The LSND anomaly is so-far still experimentally unresolved despite many efforts. 
+There are several hints supporting LSND's findings, but none are conclusive.
+The MiniBooNE experiment, designed at a similar $L/E$ baseline as LSND using accelerator neutrinos, observed similar event excesses in the $\nu_{\mu}\rightarrow\nu_e$ and $\bar\nu_{\mu}\rightarrow\bar\nu_e$ appearance channels~\cite{MiniBooNE2007,MiniBooNE2013}. 
+The GALLEX~\cite{GALLEX2010} and the SAGE~\cite{SAGE2009} solar neutrino experiments, during their calibrations using intense neutrino sources ($^{51}$Cr, $^{37}$Ar), observed a $\sim$24\% event deficit in the $\nu_e$ disappearance channel. 
+This deficit is often referred to as the ``Gallium anomaly''. 
+Recently, re-evaluations of the reactor $\bar\nu_e$ flux resulted in an increase in the predicted $\bar\nu_e$ rate~\cite{Mueller, Huber}. 
+Combining the new predictions with the reactor experimental data at baselines between 10--100 m~\cite{ILL,Gosgen,Rovno,Krasnoyarsk,SRP,Bugey4,Bugey3} suggests a $\sim$4--6\% deficit between the measured and predicted reactor $\bar\nu_e$ flux, so-called the ``reactor antineutrino anomaly"~\cite{Mention,Zhang13}. 
+These experimental anomalies can be interpreted by additional light sterile neutrinos~\cite{Guinti2011}, but might also be caused by imperfect knowledge of the theoretical predictions or experimental systematics.  
+The preferred region ($\Delta{m}^2\sim1$ eV$^2$ and $\sin^22\theta\sim0.1$), however, is in tension with the limits derived from other appearance~\cite{KARMEN2002,NOMAD03,OPERA13,ICARUS13} or disappearance searches~\cite{Stockdale84,Dydak84,MiniBooNE12-nubar,MiniBooNE12-nu,SuperK2000,MINOS11-NC,Bugey3,Conrad12}. In particular, Daya Bay and MINOS have recently set stringent limits~\cite{DayaBaySterile,Sousa-Neutrino14} on the allowed regions of light sterile neutrinos.
+
+Due to the strong motivations but rather confusing present experimental status, searching for light sterile neutrinos is a prioritized world-wide program~\cite{sterileWP} with many proposed next-generation neutrino oscillation experiments.
+Different technologies will be used, including short-baseline accelerator experiments~\cite{IsoDAR,OscSNS,NESSiE,LAr1-ND,nuSTORM} using various neutrino beams, $^{51}$Cr ($^{44}$Ce-$^{144}$Pr) $\nu_e$ ($\bar\nu_e$) source experiments~\cite{Cribier2011,Dwyer2013,SOX,CeLAND} near or inside large LS detectors, as well as very short-baseline ($\sim10$ m) reactor (VSBR) $\bar\nu_e$ experiments. 
+In order to unambiguously resolve the LSND anomaly, the oscillation cycles in the $L/E$ space need to be observed, similar as in KamLAND (Fig.~\ref{fig:kamland}) and Daya Bay (Fig.~\ref{fig:dayabay}). VSBR experiments provide unique opportunities given the many advantages provided by reactors.
+
+Multiple VSBR experiments have been proposed globally in the U.S (PROSPECT~\cite{PROSPECT}), Europe (NUCIFER~\cite{NUCIFER-2010, NUCIFER-2014}, STEREO~\cite{NUCIFER-2014}, DANSS~\cite{DANSS}, NEUTRINO-4~\cite{NEUTRINO4-2012,NEUTRINO4-2014}, POSEIDON~\cite{POSEIDON}, SOLID~\cite{SoLid}) and Korea (HANARO~\cite{HANARO}). 
+Table~\ref{tab:sterile} summarizes some of the key parameters of the proposed VSBR experiments. 
+The oscillation length of the $\sim$1 eV mass-scale sterile neutrinos is about 10 meters for reactor $\bar\nu_e$'s, thus all proposed experiments deploy their detectors at distances of 4-20 m from the reactor cores. 
+The reactor cores should ideally be compact in size to minimize the oscillations inside the cores, so most experiments utilize compact research reactors with thermal power of tens of mega-watts. Those research reactors are typically highly enriched in $^{235}$U, in contrast to the commercial reactors in the nuclear power plants. 
+
+\begin{table}[tb]
+  \begin{tabular}{lccccc}
+  \hline
+  & Power & Baseline & Mass & Detector & Seg. \\
+  & (MW$_{th}$) & (m) & (ton) &    & \\
+  \hline
+  PROSPECT  & 85  & 6-20 & 1 \& 10  & $^6$Li-LS & Y \\
+  NUCIFER   & 70 & $\sim$7  & 0.7 & Gd-LS & N \\
+  STEREO & 57  & $\sim$10 & 1.75  & Gd-LS & N \\
+  DANSS & 3000  & 9.7-12.2  & 0.9  & Gd-LS & Y \\
+  NEUTRINO-4 & 100  & 6-12  & 1.5  & Gd-LS & N \\
+  POSEIDON & 100  & 5-8  & $1.3$ & Gd-LS & N \\
+  SOLID & 45-80 & 6.8  & 2.9  & $^6$LiF-ZnS & Y \\
+  HANARO & 30  & 6  & $\sim$1  & Gd($^6$Li)-LS & Y \\
+  \hline
+  \end{tabular}
+  \caption{{\bf Key parameters of the very short-baseline reactor experiments.} The table summarizes the key parameters of the proposed very short-baseline reactor experiments, including reactor thermal power (in mega-watts), distance to reactors, target mass of the detectors, detector technology, and whether or not highly segmented detectors are planned.}
+\label{tab:sterile}
+\end{table}
+
+Background control is a challenging task in the VSBR experiments. 
+The detectors are typically at shallow depth ($\sim$10 m.w.e.)\ constrained by the locations of the reactor cores. 
+The cosmic-ray related background is therefore high. 
+One advantage of using research reactors is that they can be turned on or off on demand, which helps to measure the non-reactor background. 
+The reactor-related backgrounds, such as fast neutrons and high energy gamma rays, are however more difficult to measure as they come with the $\bar\nu_e$ signals. Sufficient active veto and passive shielding are necessary. However, given the tight space near the reactor cores,  they have to be carefully designed.
+
+As shown in Table~\ref{tab:sterile}, The detectors are typically Gd-loaded or $^{6}$Li-loaded liquid (or solid) scintillators. 
+The Gd-LS technology is mature and good pulse shape discrimination (PSD) has been demonstrated against the neutron background. One advantage of the $^{6}$Li-loaded scintillator is that the delayed neutron capture process $^{6}$Li$(n,\alpha)t$ produces an $\alpha$ particle instead of a $\gamma$-ray. 
+This provides a good localization of the delayed signal and additional PSD against the $\gamma$ background. 
+Some detectors are highly segmented into small cells in order to achieve good position resolution and further background rejection by using the multi-cell event topologies. 
+There are however more inactive layers in the segmented detectors so the edge effects have to be accurately simulated and measured.
+% in particular for Gd-LS detectors where the delayed neutron capture produces multiple $\gamma$-rays. 
+For segmented detectors, it is also more challenging to perform calibrations and control the relative variations among cells. 
+For all detectors, sufficient light yield is required to precisely measure the reactor $\bar\nu_e$ spectrum and the possible distortions from neutrino oscillations.
+
+% Thus the PROSPECT experiment is developing $^6$Li-loaded scintillator (Li-LS), while the SOLID experiment will use a composite solid scintillator consists of $^6$LiF-ZnS as neutron layer and plastic scintillator.
+
+Despite the challenges, very short-baseline reactor experiments provide a great opportunity to observe the distinctive feature of the light sterile neutrino oscillations, due to their extended range of energy (1--8 MeV) and baselines (5--20 m). 
+The world-wide next-generation VSBR experiments, as shown in Table~\ref{tab:sterile}, are being actively considered and pursued.
+Many of them will begin taking data~\cite{Lhuillier-Neutrino14} in 2015-16. With a few years' running, they expect to cover the parameter region suggested by the experimental anomalies with a sensitivity better than $5\sigma$. 
+They may tell us whether the fascinating possibility of light sterile neutrinos is true or not in the very near future.
+
+
+%%%%%%%%% Section: Conclusions %%%%%%%%%
+\section{Final Remarks} 
+\label{sec:final}
+
+Over the past $\sim$60 years, nuclear reactors have proven to be one of the most powerful tools to study neutrino oscillations, the quantum-mechanical phenomenon that requires extensions to the Standard Model. Experiments at a few kilometers and at a few hundred kilometers from the reactor cores produced some of the most convincing proofs of neutrino oscillations, by having observed in the $L/E$ domain the oscillatory behavior of reactor $\bar\nu_e$'s during their propagations. Several key parameters governing the neutrino mixing, $\theta_{12}$, $\theta_{13}$, $\Delta{m}^2_{21}$ and $|\Delta{m}^2_{31}|$, were also precisely measured by reactor experiments. 
+
+Nuclear reactors will continue to help us uncover more facts about neutrinos. In the next $\sim$20 years, the upcoming next-generation reactor experiments will tell us what is the neutrino mass hierarchy and whether or not light sterile neutrinos exist. The results will have significant impact on other future programs such as neutrinoless double-beta decay experiments, long-baseline accelerator experiments, astrophysics and cosmology. Ultimately, they may hold the key to our deeper understanding of the fundamental physics and the universe.
+
+\vspace{12pt}
+\section*{Acknowledgment}
+We thank X.~Qian and D.~Jaffe for reading the manuscript.
+The work of C.Z.~was supported in part by the Department of Energy under contracts DE-AC02-98CH10886.
+The work of P.V.~was supported in part by the National Science Foundation NSF-1205977 and by the Physics Department, California Institute of Technology.
+The work of L.J.W.~was supported in part by National Natural Science Foundation of China (Y3118S005C).
+
+% \bibliographystyle{naturemag}
+% \bibliography{references}
+
+\begin{thebibliography}{100}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{PDG14}
+\bibinfo{author}{Olive, K.~A.} \emph{et~al.}
+\newblock \bibinfo{title}{{(Particle Data Group), The Review of Particle
+  Physics}}.
+\newblock \emph{\bibinfo{journal}{Chin. Phys. C}}
+  \textbf{\bibinfo{volume}{38}}, \bibinfo{pages}{090001}
+  (\bibinfo{year}{2014}).
+
+\bibitem{Pontecorvo57}
+\bibinfo{author}{Pontecorvo, B.}
+\newblock \bibinfo{title}{{Mesonium and anti-mesonium}}.
+\newblock \emph{\bibinfo{journal}{Sov. Phys. JETP}}
+  \textbf{\bibinfo{volume}{6}}, \bibinfo{pages}{429} (\bibinfo{year}{1957}).
+
+\bibitem{Pontecorvo58}
+\bibinfo{author}{Pontecorvo, B.}
+\newblock \bibinfo{title}{{Inverse beta processes and nonconservation of lepton
+  charge}}.
+\newblock \emph{\bibinfo{journal}{Sov. Phys. JETP}}
+  \textbf{\bibinfo{volume}{7}}, \bibinfo{pages}{172--173}
+  (\bibinfo{year}{1958}).
+
+\bibitem{MNS62}
+\bibinfo{author}{Maki, Z.}, \bibinfo{author}{Nakagawa, M.} \&
+  \bibinfo{author}{Sakata, S.}
+\newblock \bibinfo{title}{{Remarks on the unified model of elementary
+  particles}}.
+\newblock \emph{\bibinfo{journal}{Prog. Theor. Phys.}}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{870--880}
+  (\bibinfo{year}{1962}).
+
+\bibitem{Pauli30}
+\bibinfo{author}{Pauli, W.}
+\newblock \bibinfo{title}{{Letter to a physicist's gathering at {T}\"{u}bingen,
+  December 3}} (\bibinfo{year}{1930}).
+
+\bibitem{Reines53}
+\bibinfo{author}{Reines, F.} \& \bibinfo{author}{Cowan, C.~L.}
+\newblock \bibinfo{title}{Detection of the free neutrino}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev.}} \textbf{\bibinfo{volume}{92}},
+  \bibinfo{pages}{830--831} (\bibinfo{year}{1953}).
+
+\bibitem{Cowan56}
+\bibinfo{author}{Cowan, C.}, \bibinfo{author}{Reines, F.},
+  \bibinfo{author}{Harrison, F.}, \bibinfo{author}{Kruse, H.} \&
+  \bibinfo{author}{Mcguire, A.}
+\newblock \bibinfo{title}{Detection of the free neutrino - confirmation}.
+\newblock \emph{\bibinfo{journal}{{Science}}} \textbf{\bibinfo{volume}{{124}}},
+  \bibinfo{pages}{{103--104}} (\bibinfo{year}{{1956}}).
+
+\bibitem{Reines59}
+\bibinfo{author}{Reines, F.} \& \bibinfo{author}{Cowan, C.~L.}
+\newblock \bibinfo{title}{Free antineutrino absorption cross section. {I}.
+  {M}easurement of the free antineutrino absorption cross section by protons}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev.}} \textbf{\bibinfo{volume}{113}},
+  \bibinfo{pages}{273--279} (\bibinfo{year}{1959}).
+
+\bibitem{ILL}
+\bibinfo{author}{Kwon, H.} \emph{et~al.}
+\newblock \bibinfo{title}{Search for neutrino oscillations at a fission
+  reactor}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{24}},
+  \bibinfo{pages}{1097--1111} (\bibinfo{year}{1981}).
+
+\bibitem{Gosgen}
+\bibinfo{author}{Zacek, G.} \emph{et~al.}
+\newblock \bibinfo{title}{Neutrino-oscillation experiments at the {G\"osgen}
+  nuclear power reactor}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{2621--2636} (\bibinfo{year}{1986}).
+
+\bibitem{Rovno}
+\bibinfo{author}{Alfonin, A.} \emph{et~al.}
+\newblock \emph{\bibinfo{journal}{J. Exp. Theor. Phys.}}
+  \textbf{\bibinfo{volume}{67}}, \bibinfo{pages}{213} (\bibinfo{year}{1998}).
+
+\bibitem{Krasnoyarsk}
+\bibinfo{author}{Alfonin, A.} \emph{et~al.}
+\newblock \emph{\bibinfo{journal}{JETP Lett.}} \textbf{\bibinfo{volume}{59}},
+  \bibinfo{pages}{390} (\bibinfo{year}{1994}).
+
+\bibitem{SRP}
+\bibinfo{author}{Greenwood, Z.~D.} \emph{et~al.}
+\newblock \bibinfo{title}{Results of a two-position reactor
+  neutrino-oscillation experiment}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{53}},
+  \bibinfo{pages}{6054--6064} (\bibinfo{year}{1996}).
+
+\bibitem{Bugey4}
+\bibinfo{author}{Declais, Y.}
+\newblock \bibinfo{title}{Study of reactor anti-neutrino interaction with
+  proton at {Bugey} nuclear power plant}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{338}}, \bibinfo{pages}{383--389}
+  (\bibinfo{year}{1994}).
+
+\bibitem{Bugey3}
+\bibinfo{author}{Declais, Y.} \emph{et~al.}
+\newblock \bibinfo{title}{{Search for neutrino oscillations at 15-meters,
+  40-meters, and 95-meters from a nuclear power reactor at Bugey}}.
+\newblock \emph{\bibinfo{journal}{Nucl. Phys.}}
+  \textbf{\bibinfo{volume}{B434}}, \bibinfo{pages}{503--534}
+  (\bibinfo{year}{1995}).
+
+\bibitem{Bemporad02}
+\bibinfo{author}{Bemporad, C.}, \bibinfo{author}{Gratta, G.} \&
+  \bibinfo{author}{Vogel, P.}
+\newblock \bibinfo{title}{Reactor-based neutrino oscillation experiments}.
+\newblock \emph{\bibinfo{journal}{Rev. Mod. Phys.}}
+  \textbf{\bibinfo{volume}{74}}, \bibinfo{pages}{297--328}
+  (\bibinfo{year}{2002}).
+
+\bibitem{Kamland03}
+\bibinfo{author}{Eguchi, K.} \emph{et~al.}
+\newblock \bibinfo{title}{{First results from KamLAND: Evidence for reactor
+  anti-neutrino disappearance}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{90}}, \bibinfo{pages}{021802}
+  (\bibinfo{year}{2003}).
+
+\bibitem{Kamland05}
+\bibinfo{author}{Araki, T.} \emph{et~al.}
+\newblock \bibinfo{title}{{Measurement of neutrino oscillation with KamLAND:
+  Evidence of spectral distortion}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{94}}, \bibinfo{pages}{081801}
+  (\bibinfo{year}{2005}).
+
+\bibitem{Kamland08}
+\bibinfo{author}{Abe, S.} \emph{et~al.}
+\newblock \bibinfo{title}{Precision measurement of neutrino oscillation
+  parameters with {KamLAND}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{100}}, \bibinfo{pages}{221803}
+  (\bibinfo{year}{2008}).
+
+\bibitem{Dayabay}
+\bibinfo{author}{An, F.~P.} \emph{et~al.}
+\newblock \bibinfo{title}{{Observation of electron-antineutrino disappearance
+  at Daya Bay}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{108}}, \bibinfo{pages}{171803}
+  (\bibinfo{year}{2012}).
+
+\bibitem{Dayabay14}
+\bibinfo{author}{An, F.~P.} \emph{et~al.}
+\newblock \bibinfo{title}{Spectral measurement of electron antineutrino
+  oscillation amplitude and frequency at {Daya Bay}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{061801}
+  (\bibinfo{year}{2014}).
+
+\bibitem{Reno}
+\bibinfo{author}{Ahn, J.~K.} \emph{et~al.}
+\newblock \bibinfo{title}{Observation of reactor electron antineutrinos
+  disappearance in the {RENO} experiment}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{108}}, \bibinfo{pages}{191802}
+  (\bibinfo{year}{2012}).
+
+\bibitem{DChooz}
+\bibinfo{author}{Abe, Y.} \emph{et~al.}
+\newblock \bibinfo{title}{Indication of reactor $\bar\nu_e$ disappearance in
+  the {Double Chooz} experiment}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{108}}, \bibinfo{pages}{131801}
+  (\bibinfo{year}{2012}).
+
+\bibitem{DChooz14}
+\bibinfo{author}{Abe, Y.} \emph{et~al.}
+\newblock \bibinfo{title}{{Background-independent measurement of $\theta_{13}$
+  in Double Chooz}}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{735}}, \bibinfo{pages}{51--56}
+  (\bibinfo{year}{2014}).
+
+\bibitem{He-NuFact13}
+\bibinfo{author}{He, M.}
+\newblock \bibinfo{title}{{Future Reactor Experiment}}.
+\newblock \bibinfo{howpublished}{talk at the NuFact 2013 conference}
+  (\bibinfo{year}{2013}).
+
+\bibitem{RENO-50}
+\bibinfo{author}{Kim, S.~B.}
+\newblock \bibinfo{title}{{Proposal for RENO-50}}.
+\newblock \bibinfo{howpublished}{talk at the International Workshop on RENO-50
+  toward Neutrino Mass Hierarchy, Seoul, June 13-14, (2013)}
+  (\bibinfo{year}{2013}).
+
+\bibitem{Mention}
+\bibinfo{author}{Mention, G.} \emph{et~al.}
+\newblock \bibinfo{title}{Reactor antineutrino anomaly}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{83}},
+  \bibinfo{pages}{073006} (\bibinfo{year}{2011}).
+
+\bibitem{vonFeilitzsch}
+\bibinfo{author}{von Feilitzsch, F.}, \bibinfo{author}{Hahn, A.} \&
+  \bibinfo{author}{Schreckenbach, K.}
+\newblock \bibinfo{title}{Experimental beta-spectra from {$^{239}$Pu} and
+  {$^{235}$U} thermal neutron fission products and their correlated
+  antineutrino spectra}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{118}}, \bibinfo{pages}{162--166}
+  (\bibinfo{year}{1982}).
+
+\bibitem{Schreckenbach}
+\bibinfo{author}{Schreckenbach, K.}, \bibinfo{author}{Colvin, G.},
+  \bibinfo{author}{Gelletly, W.} \& \bibinfo{author}{von Feilitzsch, F.}
+\newblock \bibinfo{title}{{Determination of the anti-neutrino spectrum from
+  {$^{235}$U} thermal neutron fission products up to 9.5-MeV}}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{160}}, \bibinfo{pages}{325} (\bibinfo{year}{1985}).
+
+\bibitem{Hahn}
+\bibinfo{author}{Hahn, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Anti-neutrino spectra from {$^{241}$Pu} and
+  {$^{239}$Pu} thermal neutron fission products}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{218}}, \bibinfo{pages}{365} (\bibinfo{year}{1989}).
+
+\bibitem{Vogel07}
+\bibinfo{author}{Vogel, P.}
+\newblock \bibinfo{title}{Conversion of electron spectrum associated with
+  fission into the antineutrino spectrum}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. C}} \textbf{\bibinfo{volume}{76}},
+  \bibinfo{pages}{025504} (\bibinfo{year}{2007}).
+
+\bibitem{Huber}
+\bibinfo{author}{Huber, P.}
+\newblock \bibinfo{title}{Determination of antineutrino spectra from nuclear
+  reactors}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. C}} \textbf{\bibinfo{volume}{84}},
+  \bibinfo{pages}{024617} (\bibinfo{year}{2011}).
+
+\bibitem{Davis}
+\bibinfo{author}{Davis, B.~R.}, \bibinfo{author}{Vogel, P.},
+  \bibinfo{author}{Mann, F.~M.} \& \bibinfo{author}{Schenter, R.~E.}
+\newblock \bibinfo{title}{Reactor antineutrino spectra and their application to
+  antineutrino-induced reactions}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. C}} \textbf{\bibinfo{volume}{19}},
+  \bibinfo{pages}{2259--2266} (\bibinfo{year}{1979}).
+
+\bibitem{Vogel81}
+\bibinfo{author}{Vogel, P.}, \bibinfo{author}{Schenter, G.~K.},
+  \bibinfo{author}{Mann, F.~M.} \& \bibinfo{author}{Schenter, R.~E.}
+\newblock \bibinfo{title}{{Reactor antineutrino spectra and their application
+  to antineutrino-induced reactions. II}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. C}} \textbf{\bibinfo{volume}{24}},
+  \bibinfo{pages}{1543--1553} (\bibinfo{year}{1981}).
+
+\bibitem{Klapdor-Pu}
+\bibinfo{author}{Klapdor, H.~V.} \& \bibinfo{author}{Metzinger, J.}
+\newblock \bibinfo{title}{Antineutrino spectrum from the fission products of
+  {$^{239}$Pu}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{48}}, \bibinfo{pages}{127--131}
+  (\bibinfo{year}{1982}).
+
+\bibitem{Klapdor-U}
+\bibinfo{author}{Klapdor, H.} \& \bibinfo{author}{Metzinger, J.}
+\newblock \bibinfo{title}{Calculation of the antineutrino spectrum from thermal
+  fission of {$^{235}$U}}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{22--26}
+  (\bibinfo{year}{1982}).
+
+\bibitem{Kopeikin}
+\bibinfo{author}{Kopeikin, V.~I.}
+\newblock \emph{\bibinfo{journal}{Sov. J. Nucl. Phys.}}
+  \textbf{\bibinfo{volume}{32}}, \bibinfo{pages}{780} (\bibinfo{year}{1980}).
+
+\bibitem{Mueller}
+\bibinfo{author}{Mueller, T.~A.} \emph{et~al.}
+\newblock \bibinfo{title}{Improved predictions of reactor antineutrino
+  spectra}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. C}} \textbf{\bibinfo{volume}{83}},
+  \bibinfo{pages}{054615} (\bibinfo{year}{2011}).
+
+\bibitem{Haag}
+\bibinfo{author}{Haag, N.} \emph{et~al.}
+\newblock \bibinfo{title}{{Experimental Determination of the Antineutrino
+  Spectrum of the Fission Products of $^{238}$U}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1312.5601}
+  (\bibinfo{year}{2013}).
+
+\bibitem{Hayes}
+\bibinfo{author}{Hayes, A.~C.}, \bibinfo{author}{Friar, J.~L.},
+  \bibinfo{author}{Garvey, G.~T.}, \bibinfo{author}{Jungman, G.} \&
+  \bibinfo{author}{Jonkmans, G.}
+\newblock \bibinfo{title}{Systematic uncertainties in the analysis of the
+  reactor neutrino anomaly}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{202501}
+  (\bibinfo{year}{2014}).
+
+\bibitem{VB99}
+\bibinfo{author}{Vogel, P.} \& \bibinfo{author}{Beacom, J.~F.}
+\newblock \bibinfo{title}{Angular distribution of neutron inverse beta decay,
+  $\bar\nu_{e}+p \rightarrow e^{+}+n$}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{60}},
+  \bibinfo{pages}{053003} (\bibinfo{year}{1999}).
+
+\bibitem{Strumia}
+\bibinfo{author}{Strumia, A.} \& \bibinfo{author}{Vissani, F.}
+\newblock \bibinfo{title}{Precise quasielastic neutrino/nucleon cross-section}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{564}}, \bibinfo{pages}{42--54}
+  (\bibinfo{year}{2003}).
+
+\bibitem{Wolfenstein78}
+\bibinfo{author}{Wolfenstein, L.}
+\newblock \bibinfo{title}{Neutrino oscillations in matter}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{17}},
+  \bibinfo{pages}{2369--2374} (\bibinfo{year}{1978}).
+
+\bibitem{MS85}
+\bibinfo{author}{Mikheev, S.~P.} \& \bibinfo{author}{Smirnov, A.~Y.}
+\newblock \bibinfo{title}{{Resonance enhancement of oscillations in matter and
+  solar neutrino spectroscopy}}.
+\newblock \emph{\bibinfo{journal}{Sov. J. Nucl. Phys.}}
+  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{913--917}
+  (\bibinfo{year}{1985}).
+
+\bibitem{Homestake}
+\bibinfo{author}{Davis, R.}, \bibinfo{author}{Harmer, D.~S.} \&
+  \bibinfo{author}{Hoffman, K.~C.}
+\newblock \bibinfo{title}{Search for neutrinos from the {Sun}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{20}}, \bibinfo{pages}{1205--1209}
+  (\bibinfo{year}{1968}).
+
+\bibitem{GALLEX}
+\bibinfo{author}{Hampel, W.} \emph{et~al.}
+\newblock \bibinfo{title}{{GALLEX} solar neutrino observations: results for
+  {GALLEX} {IV}}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{447}}, \bibinfo{pages}{127--133}
+  (\bibinfo{year}{1999}).
+
+\bibitem{SAGE}
+\bibinfo{author}{Abdurashitov, J.~N.} \emph{et~al.}
+\newblock \bibinfo{title}{{Measurement of the solar neutrino capture rate by
+  {SAGE} and implications for neutrino oscillations in vacuum}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{83}}, \bibinfo{pages}{4686--4689}
+  (\bibinfo{year}{1999}).
+
+\bibitem{Kamiokande}
+\bibinfo{author}{Hirata, K.~S.} \emph{et~al.}
+\newblock \bibinfo{title}{{Observation of $^{8}\mathrm{B}$ solar neutrinos in
+  the Kamiokande-II detector}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{63}}, \bibinfo{pages}{16--19}
+  (\bibinfo{year}{1989}).
+
+\bibitem{Super-Kamiokande}
+\bibinfo{author}{Fukuda, Y.} \emph{et~al.}
+\newblock \bibinfo{title}{Measurements of the solar neutrino flux from
+  {Super-Kamiokande's} first 300 days}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{81}}, \bibinfo{pages}{1158--1162}
+  (\bibinfo{year}{1998}).
+
+\bibitem{Bahcall}
+\bibinfo{author}{Bahcall, J.~N.}
+\newblock \bibinfo{title}{Solar neutrino cross sections and nuclear beta
+  decay}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev.}} \textbf{\bibinfo{volume}{135}},
+  \bibinfo{pages}{B137--B146} (\bibinfo{year}{1964}).
+
+\bibitem{SNO}
+\bibinfo{author}{Ahmad, Q.~R.} \emph{et~al.}
+\newblock \bibinfo{title}{Measurement of the rate of $\nu_e + d \rightarrow p +
+  p + e^-$ interactions produced by {$^{8}$B} solar neutrinos at the {Sudbury
+  Neutrino Observatory}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{87}}, \bibinfo{pages}{071301}
+  (\bibinfo{year}{2001}).
+
+\bibitem{KamLAND-4pi}
+\bibinfo{author}{Berger, B.~E.} \emph{et~al.}
+\newblock \bibinfo{title}{{The KamLAND full-volume calibration system}}.
+\newblock \emph{\bibinfo{journal}{JINST}} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{P04017} (\bibinfo{year}{2009}).
+
+\bibitem{Kajita}
+\bibinfo{author}{Kajita, T.} \& \bibinfo{author}{Totsuka, Y.}
+\newblock \bibinfo{title}{Observation of atmospheric neutrinos}.
+\newblock \emph{\bibinfo{journal}{Rev. Mod. Phys.}}
+  \textbf{\bibinfo{volume}{73}}, \bibinfo{pages}{85} (\bibinfo{year}{2001}).
+
+\bibitem{Feldman}
+\bibinfo{author}{Feldman, G.}, \bibinfo{author}{Hartnell, J.} \&
+  \bibinfo{author}{Kobayashi, T.}
+\newblock \bibinfo{title}{{Long-baseline neutrino oscillation experiments}}.
+\newblock \emph{\bibinfo{journal}{Adv. High Energy Phys.}}
+  \textbf{\bibinfo{volume}{2013}}, \bibinfo{pages}{475749}
+  (\bibinfo{year}{2013}).
+
+\bibitem{Zhang-Neutrino14}
+\bibinfo{author}{Zhang, C.}
+\newblock \bibinfo{title}{{Recent results from the Daya Bay experiment}}.
+\newblock \bibinfo{howpublished}{talk at the XXVI Conference on Neutrino
+  Physics and Astrophysics (Neutrino 2014)} (\bibinfo{year}{2014}).
+
+\bibitem{Chooz}
+\bibinfo{author}{Apollonio, M.} \emph{et~al.}
+\newblock \bibinfo{title}{Limits on neutrino oscillations from the {CHOOZ}
+  experiment}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett.}}
+  \textbf{\bibinfo{volume}{B466}}, \bibinfo{pages}{415--430}
+  (\bibinfo{year}{1999}).
+
+\bibitem{Paloverde}
+\bibinfo{author}{Boehm, F.} \emph{et~al.}
+\newblock \bibinfo{title}{Search for neutrino oscillations at the {Palo Verde}
+  nuclear reactors}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{84}}, \bibinfo{pages}{3764--3767}
+  (\bibinfo{year}{2000}).
+
+\bibitem{Harrison}
+\bibinfo{author}{Harrison, P.}, \bibinfo{author}{Perkins, D.} \&
+  \bibinfo{author}{Scott, W.}
+\newblock \bibinfo{title}{Tri-bimaximal mixing and the neutrino oscillation
+  data}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{530}}, \bibinfo{pages}{167--173}
+  (\bibinfo{year}{2002}).
+
+\bibitem{Altarelli}
+\bibinfo{author}{Altarelli, G.} \& \bibinfo{author}{Feruglio, F.}
+\newblock \bibinfo{title}{Discrete flavor symmetries and models of neutrino
+  mixing}.
+\newblock \emph{\bibinfo{journal}{Rev. Mod. Phys.}}
+  \textbf{\bibinfo{volume}{82}}, \bibinfo{pages}{2701--2729}
+  (\bibinfo{year}{2010}).
+
+\bibitem{MHwhitepaper}
+\bibinfo{author}{Cahn, R.~N.} \emph{et~al.}
+\newblock \bibinfo{title}{White paper: Measuring the neutrino mass hierarchy}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1307:5487}
+  (\bibinfo{year}{2013}).
+
+\bibitem{Li-PRD13}
+\bibinfo{author}{Li, Y.}, \bibinfo{author}{Cao, J.}, \bibinfo{author}{Wang, Y.}
+  \& \bibinfo{author}{Zhan, L.}
+\newblock \bibinfo{title}{Unambiguous determination of the neutrino mass
+  hierarchy using reactor neutrinos}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{88}},
+  \bibinfo{pages}{013008} (\bibinfo{year}{2013}).
+
+\bibitem{Zhan-PRD08}
+\bibinfo{author}{Zhan, L.}, \bibinfo{author}{Wang, Y.}, \bibinfo{author}{Cao,
+  J.} \& \bibinfo{author}{Wen, L.}
+\newblock \bibinfo{title}{Determination of the neutrino mass hierarchy at an
+  intermediate baseline}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{78}},
+  \bibinfo{pages}{111103} (\bibinfo{year}{2008}).
+
+\bibitem{Zhan-PRD09}
+\bibinfo{author}{Zhan, L.}, \bibinfo{author}{Wang, Y.}, \bibinfo{author}{Cao,
+  J.} \& \bibinfo{author}{Wen, L.}
+\newblock \bibinfo{title}{Experimental requirements to determine the neutrino
+  mass hierarchy using reactor neutrinos}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{073007} (\bibinfo{year}{2009}).
+
+\bibitem{Minakata}
+\bibinfo{author}{Minakata, H.}, \bibinfo{author}{Nunokawa, H.},
+  \bibinfo{author}{Parke, S.~J.} \& \bibinfo{author}{Funchal, R.~Z.}
+\newblock \bibinfo{title}{Determining neutrino mass hierarchy by precision
+  measurements in electron and muon neutrino disappearance experiments}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{74}},
+  \bibinfo{pages}{053008} (\bibinfo{year}{2006}).
+
+\bibitem{Qian-PRD13}
+\bibinfo{author}{Qian, X.} \emph{et~al.}
+\newblock \bibinfo{title}{Mass hierarchy resolution in reactor anti-neutrino
+  experiments: Parameter degeneracies and detector energy response}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{87}},
+  \bibinfo{pages}{033005} (\bibinfo{year}{2013}).
+
+\bibitem{KamLAND-spall}
+\bibinfo{author}{Abe, S.} \emph{et~al.}
+\newblock \bibinfo{title}{Production of radioactive isotopes through cosmic
+  muon spallation in {KamLAND}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. C}} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{025807} (\bibinfo{year}{2010}).
+
+\bibitem{Qian-Stat}
+\bibinfo{author}{Qian, X.} \emph{et~al.}
+\newblock \bibinfo{title}{Statistical evaluation of experimental determinations
+  of neutrino mass hierarchy}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{113011} (\bibinfo{year}{2012}).
+
+\bibitem{Blennow}
+\bibinfo{author}{Blennow, M.}, \bibinfo{author}{Coloma, P.},
+  \bibinfo{author}{Huber, P.} \& \bibinfo{author}{Schwetz, T.}
+\newblock \bibinfo{title}{Quantifying the sensitivity of oscillation
+  experiments to the neutrino mass ordering}.
+\newblock \emph{\bibinfo{journal}{JHEP}} \textbf{\bibinfo{volume}{2014}}
+  (\bibinfo{year}{2014}).
+
+\bibitem{MBRwitepaper}
+\bibinfo{author}{Kettell, S.} \emph{et~al.}
+\newblock \bibinfo{title}{{Neutrino mass hierarchy determination and other
+  physics potential of medium-baseline reactor neutrino oscillation
+  experiments}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1307.7419}
+  (\bibinfo{year}{2013}).
+
+\bibitem{Agarwalla}
+\bibinfo{author}{Agarwalla, S.~K.}, \bibinfo{author}{Prakash, S.} \&
+  \bibinfo{author}{Wang, W.}
+\newblock \bibinfo{title}{{High-precision measurement of atmospheric
+  mass-squared splitting with T2K and NOvA}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1312.1477}
+  (\bibinfo{year}{2013}).
+
+\bibitem{unitarity13}
+\bibinfo{author}{Qian, X.}, \bibinfo{author}{Zhang, C.},
+  \bibinfo{author}{Diwan, M.} \& \bibinfo{author}{Vogel, P.}
+\newblock \bibinfo{title}{Unitarity tests of the neutrino mixing matrix}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1308.5700}
+  (\bibinfo{year}{2013}).
+
+\bibitem{LBNE}
+\bibinfo{author}{Adams, C.} \emph{et~al.}
+\newblock \bibinfo{title}{{Scientific Opportunities with the Long-Baseline
+  Neutrino Experiment}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1307.7335}
+  (\bibinfo{year}{2013}).
+
+\bibitem{PINGU}
+\bibinfo{author}{Aartsen, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Letter of Intent: The Precision IceCube Next
+  Generation Upgrade (PINGU)}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1401.2046}
+  (\bibinfo{year}{2014}).
+
+\bibitem{EW-2005}
+\bibinfo{author}{Schael, S.} \emph{et~al.}
+\newblock \bibinfo{title}{{(ALEPH Collaboration, DELPHI Collaboration, L3
+  Collaboration, OPAL Collaboration, SLD Collaboration, LEP Electroweak Working
+  Group, SLD Electroweak Group, SLD Heavy Flavour Group), Precision Electroweak
+  Measurements on the Z Resonance}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rept.}} \textbf{\bibinfo{volume}{427}},
+  \bibinfo{pages}{257--454} (\bibinfo{year}{2006}).
+
+\bibitem{LSND2001}
+\bibinfo{author}{Aguilar, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Evidence for neutrino oscillations from the
+  observation of $\bar\nu_e$ appearance in a $\bar\nu_\mu$ beam}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{64}},
+  \bibinfo{pages}{112007} (\bibinfo{year}{2001}).
+
+\bibitem{Dodelson}
+\bibinfo{author}{Dodelson, S.} \& \bibinfo{author}{Widrow, L.~M.}
+\newblock \bibinfo{title}{Sterile neutrinos as dark matter}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{72}}, \bibinfo{pages}{17--20}
+  (\bibinfo{year}{1994}).
+
+\bibitem{Kusenko}
+\bibinfo{author}{Kusenko, A.}
+\newblock \bibinfo{title}{{Sterile neutrinos: The Dark side of the light
+  fermions}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rept.}} \textbf{\bibinfo{volume}{481}},
+  \bibinfo{pages}{1--28} (\bibinfo{year}{2009}).
+
+\bibitem{Wyman}
+\bibinfo{author}{Wyman, M.}, \bibinfo{author}{Rudd, D.~H.},
+  \bibinfo{author}{Vanderveld, R.~A.} \& \bibinfo{author}{Hu, W.}
+\newblock \bibinfo{title}{Neutrinos help reconcile planck measurements with the
+  local universe}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{051302}
+  (\bibinfo{year}{2014}).
+
+\bibitem{Battye}
+\bibinfo{author}{Battye, R.~A.} \& \bibinfo{author}{Moss, A.}
+\newblock \bibinfo{title}{Evidence for massive neutrinos from cosmic microwave
+  background and lensing observations}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{051303}
+  (\bibinfo{year}{2014}).
+
+\bibitem{Minkowski}
+\bibinfo{author}{Minkowski, P.}
+\newblock \bibinfo{title}{$\mu \to e \gamma$ at a rate of one out of $10^9$
+  muon decays?}
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{67}}, \bibinfo{pages}{421--428}
+  (\bibinfo{year}{1977}).
+
+\bibitem{Yanagida}
+\bibinfo{author}{Yanagida, T.}
+\newblock \bibinfo{title}{Horizontal symmetry and masses of neutrinos}.
+\newblock \emph{\bibinfo{journal}{Conf. Proc.}}
+  \textbf{\bibinfo{volume}{C7902131}}, \bibinfo{pages}{95--99}
+  (\bibinfo{year}{1979}).
+
+\bibitem{GellMann}
+\bibinfo{author}{Gell-Mann, M.}, \bibinfo{author}{Ramond, P.} \&
+  \bibinfo{author}{Slansky, R.}
+\newblock \bibinfo{title}{Complex spinors and unified theories}.
+\newblock \emph{\bibinfo{journal}{Conf. Proc.}}
+  \textbf{\bibinfo{volume}{C790927}}, \bibinfo{pages}{315--321}
+  (\bibinfo{year}{1979}).
+
+\bibitem{Mohapatra}
+\bibinfo{author}{Mohapatra, R.~N.} \& \bibinfo{author}{Senjanovi\'{c}, G.}
+\newblock \bibinfo{title}{Neutrino mass and spontaneous parity
+  nonconservation}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{44}}, \bibinfo{pages}{912--915}
+  (\bibinfo{year}{1980}).
+
+\bibitem{Fukugita}
+\bibinfo{author}{Fukugita, M.} \& \bibinfo{author}{Yanagida, T.}
+\newblock \bibinfo{title}{Baryogenesis without grand unification}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett.}}
+  \textbf{\bibinfo{volume}{B174}}, \bibinfo{pages}{45} (\bibinfo{year}{1986}).
+
+\bibitem{MiniBooNE2007}
+\bibinfo{author}{Aguilar-Arevalo, A.~A.} \emph{et~al.}
+\newblock \bibinfo{title}{Search for electron neutrino appearance at the
+  {$\Delta m^2\sim1$ eV$^2$} scale}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{98}}, \bibinfo{pages}{231801}
+  (\bibinfo{year}{2007}).
+
+\bibitem{MiniBooNE2013}
+\bibinfo{author}{Aguilar-Arevalo, A.~A.} \emph{et~al.}
+\newblock \bibinfo{title}{Improved search for $\bar\nu_\mu\rightarrow\bar\nu_e$
+  oscillations in the {MiniBooNE} experiment}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{110}}, \bibinfo{pages}{161801}
+  (\bibinfo{year}{2013}).
+
+\bibitem{GALLEX2010}
+\bibinfo{author}{Abdurashitov, J.~N.} \emph{et~al.}
+\newblock \bibinfo{title}{Reanalysis of the {Gallex} solar neutrino flux and
+  source experiments}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{685}}, \bibinfo{pages}{47--54}
+  (\bibinfo{year}{2010}).
+
+\bibitem{SAGE2009}
+\bibinfo{author}{Abdurashitov, J.~N.} \emph{et~al.}
+\newblock \bibinfo{title}{Measurement of the solar neutrino capture rate with
+  gallium metal. {III. Results} for the 2002--2007 data-taking period}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. C}} \textbf{\bibinfo{volume}{80}},
+  \bibinfo{pages}{015807} (\bibinfo{year}{2009}).
+
+\bibitem{Zhang13}
+\bibinfo{author}{Zhang, C.}, \bibinfo{author}{Qian, X.} \&
+  \bibinfo{author}{Vogel, P.}
+\newblock \bibinfo{title}{Reactor antineutrino anomaly with known
+  $\theta_{13}$}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{87}},
+  \bibinfo{pages}{073018} (\bibinfo{year}{2013}).
+
+\bibitem{Guinti2011}
+\bibinfo{author}{Giunti, C.} \& \bibinfo{author}{M., L.}
+\newblock \bibinfo{title}{Status of 3+1 neutrino mixing}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{84}},
+  \bibinfo{pages}{093006} (\bibinfo{year}{2011}).
+
+\bibitem{KARMEN2002}
+\bibinfo{author}{B., A.} \emph{et~al.}
+\newblock \bibinfo{title}{Upper limits for neutrino oscillations
+  $\bar\nu_\mu\rightarrow\bar\nu_e$ from muon decay at rest}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{65}},
+  \bibinfo{pages}{112001} (\bibinfo{year}{2002}).
+
+\bibitem{NOMAD03}
+\bibinfo{author}{Astier, P.} \emph{et~al.}
+\newblock \bibinfo{title}{Search for $\nu_{\mu} \rightarrow \nu_{e}$
+  oscillations in the {NOMAD} experiment}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{570}}, \bibinfo{pages}{19--31}
+  (\bibinfo{year}{2003}).
+
+\bibitem{OPERA13}
+\bibinfo{author}{Agafonova, N.} \emph{et~al.}
+\newblock \bibinfo{title}{Addendum: search for $\nu_{\mu} \rightarrow \nu_{e}$
+  oscillations with the {OPERA} experiment in the {CNGS} beam}.
+\newblock \emph{\bibinfo{journal}{JHEP}} \textbf{\bibinfo{volume}{2013}}
+  (\bibinfo{year}{2013}).
+
+\bibitem{ICARUS13}
+\bibinfo{author}{Antonello, M.} \emph{et~al.}
+\newblock \bibinfo{title}{Search for anomalies in the $\nu_e$ appearance from a
+  $\nu_\mu$ beam}.
+\newblock \emph{\bibinfo{journal}{Eur. Phys. J. C}}
+  \textbf{\bibinfo{volume}{73}} (\bibinfo{year}{2013}).
+
+\bibitem{Stockdale84}
+\bibinfo{author}{Stockdale, I.~E.} \emph{et~al.}
+\newblock \bibinfo{title}{Limits on muon-neutrino oscillations in the mass
+  range {$30 < \Delta{m}^2 < 1000$ eV$^2/c^4$}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{52}}, \bibinfo{pages}{1384--1388}
+  (\bibinfo{year}{1984}).
+
+\bibitem{Dydak84}
+\bibinfo{author}{Dydak, F.} \emph{et~al.}
+\newblock \bibinfo{title}{{A search for $\nu_\mu$ oscillations in the
+  $\Delta{m}^2$ range 0.3--90 eV$^2$}}.
+\newblock \emph{\bibinfo{journal}{Phys. Lett. B}}
+  \textbf{\bibinfo{volume}{134}}, \bibinfo{pages}{281--286}
+  (\bibinfo{year}{1984}).
+
+\bibitem{MiniBooNE12-nubar}
+\bibinfo{author}{Cheng, G.} \emph{et~al.}
+\newblock \bibinfo{title}{{Dual baseline search for muon antineutrino
+  disappearance at $0.1\ {\mathrm{eV}}^{2} < \Delta{m}^{2} < 100\
+  {\mathrm{eV}}^{2}$}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{052009} (\bibinfo{year}{2012}).
+
+\bibitem{MiniBooNE12-nu}
+\bibinfo{author}{Mahn, K. B.~M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Dual baseline search for muon neutrino disappearance
+  at $0.5\ {\mathrm{eV}}^{2} < \Delta{m}^{2} < 40\ {\mathrm{eV}}^{2}$}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{85}},
+  \bibinfo{pages}{032007} (\bibinfo{year}{2012}).
+
+\bibitem{SuperK2000}
+\bibinfo{author}{Fukuda, S.} \emph{et~al.}
+\newblock \bibinfo{title}{Tau neutrinos favored over sterile neutrinos in
+  atmospheric muon neutrino oscillations}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{85}}, \bibinfo{pages}{3999--4003}
+  (\bibinfo{year}{2000}).
+
+\bibitem{MINOS11-NC}
+\bibinfo{author}{Adamson, P.} \emph{et~al.}
+\newblock \bibinfo{title}{Active to sterile neutrino mixing limits from
+  neutral-current interactions in {MINOS}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{107}}, \bibinfo{pages}{011802}
+  (\bibinfo{year}{2011}).
+
+\bibitem{Conrad12}
+\bibinfo{author}{Conrad, J.~M.} \& \bibinfo{author}{Shaevitz, M.~H.}
+\newblock \bibinfo{title}{{Limits on electron neutrino disappearance from the
+  KARMEN and LSND $\nu_{e}$-carbon cross section data}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{85}},
+  \bibinfo{pages}{013017} (\bibinfo{year}{2012}).
+
+\bibitem{DayaBaySterile}
+\bibinfo{author}{An, F.~P.} \emph{et~al.}
+\newblock \bibinfo{title}{Search for a light sterile neutrino at {Daya Bay}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{113}}, \bibinfo{pages}{141802}
+  (\bibinfo{year}{2014}).
+
+\bibitem{Sousa-Neutrino14}
+\bibinfo{author}{Sousa, A.}
+\newblock \bibinfo{title}{{First MINOS+ Data and New Results from MINOS}}.
+\newblock \bibinfo{howpublished}{talk at the XXVI Conference on Neutrino
+  Physics and Astrophysics (Neutrino 2014)} (\bibinfo{year}{2014}).
+
+\bibitem{sterileWP}
+\bibinfo{author}{Abazajian, K.~N.} \emph{et~al.}
+\newblock \bibinfo{title}{Light sterile neutrinos: A white paper}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1204.5379}
+  (\bibinfo{year}{2012}).
+
+\bibitem{IsoDAR}
+\bibinfo{author}{Bungau, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Proposal for an electron antineutrino disappearance
+  search using high-rate {Li8} production and decay}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{109}}, \bibinfo{pages}{141802}
+  (\bibinfo{year}{2012}).
+
+\bibitem{OscSNS}
+\bibinfo{author}{Elnimr, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{The OscSNS White Paper}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1307.7097}
+  (\bibinfo{year}{2013}).
+
+\bibitem{NESSiE}
+\bibinfo{author}{{Antonello}, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Search for ``anomalies'' from neutrino and
+  anti-neutrino oscillations at $\Delta{m}^2 \sim 1$ eV$^2$ with muon
+  spectrometers and large LAr-TPC imaging detectors}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1203.3432}
+  (\bibinfo{year}{2012}).
+
+\bibitem{LAr1-ND}
+\bibinfo{author}{Adams, C.} \emph{et~al.}
+\newblock \bibinfo{title}{{LAr1-ND}: Testing neutrino anomalies with multiple
+  {LArTPC} detectors at {Fermilab}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1309.7987}
+  (\bibinfo{year}{2013}).
+
+\bibitem{nuSTORM}
+\bibinfo{author}{Adey, D.} \emph{et~al.}
+\newblock \bibinfo{title}{Light sterile neutrino sensitivity at the {nuSTORM}
+  facility}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1402.525}
+  (\bibinfo{year}{2014}).
+
+\bibitem{Cribier2011}
+\bibinfo{author}{Cribier, M.} \emph{et~al.}
+\newblock \bibinfo{title}{Proposed search for a fourth neutrino with a {PBq}
+  antineutrino source}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{107}}, \bibinfo{pages}{201801}
+  (\bibinfo{year}{2011}).
+
+\bibitem{Dwyer2013}
+\bibinfo{author}{Dwyer, D.~A.}, \bibinfo{author}{Heeger, K.~M.},
+  \bibinfo{author}{Littlejohn, B.~R.} \& \bibinfo{author}{Vogel, P.}
+\newblock \bibinfo{title}{Search for sterile neutrinos with a radioactive
+  source at {Daya Bay}}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. D}} \textbf{\bibinfo{volume}{87}},
+  \bibinfo{pages}{093002} (\bibinfo{year}{2013}).
+
+\bibitem{SOX}
+\bibinfo{author}{Bellini, G.} \emph{et~al.}
+\newblock \bibinfo{title}{{SOX}: Short distance neutrino oscillations with
+  {BoreXino}}.
+\newblock \emph{\bibinfo{journal}{JHEP}} \textbf{\bibinfo{volume}{08}},
+  \bibinfo{pages}{038} (\bibinfo{year}{2013}).
+
+\bibitem{CeLAND}
+\bibinfo{author}{Gando, A.} \emph{et~al.}
+\newblock \bibinfo{title}{{CeLAND}: search for a 4th light neutrino state with
+  a 3 {PBq 144Ce-144Pr} electron antineutrino generator in {KamLAND}}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1312.0896}
+  (\bibinfo{year}{2013}).
+
+\bibitem{PROSPECT}
+\bibinfo{author}{Ashenfelter, J.} \emph{et~al.}
+\newblock \bibinfo{title}{{PROSPECT} - {A} precision reactor oscillation and
+  spectrum experiment at very short baselines}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1309.7647}
+  (\bibinfo{year}{2013}).
+
+\bibitem{NUCIFER-2010}
+\bibinfo{author}{Porta, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Reactor neutrino detection for non-proliferation with
+  the {NUCIFER} experiment}.
+\newblock \emph{\bibinfo{journal}{IEEE Trans. Nucl. Sci.}}
+  \textbf{\bibinfo{volume}{57}}, \bibinfo{pages}{2732} (\bibinfo{year}{2010}).
+
+\bibitem{NUCIFER-2014}
+\bibinfo{author}{Pequignot, M.}
+\newblock \bibinfo{title}{The {NUCIFER} and {STEREO} experiments}.
+\newblock \bibinfo{howpublished}{{talk at the Neutrino Oscillation Workshop,
+  2014 (NOW 2014)}} (\bibinfo{year}{2014}).
+
+\bibitem{DANSS}
+\bibinfo{author}{Alekseev, A.} \emph{et~al.}
+\newblock \bibinfo{title}{{DANSSino}: a pilot version of the {DANSS} neutrino
+  detector}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1305.3350}
+  (\bibinfo{year}{2013}).
+
+\bibitem{NEUTRINO4-2012}
+\bibinfo{author}{Serebrov, A.~P.} \emph{et~al.}
+\newblock \bibinfo{title}{``neutrino-4'' experiment: preparations for search
+  for sterile neutrino at 100 {MW} reactor {SM-3} at 6-13 meters}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1205.2955}
+  (\bibinfo{year}{2012}).
+
+\bibitem{NEUTRINO4-2014}
+\bibinfo{author}{Serebrov, A.~P.} \emph{et~al.}
+\newblock \bibinfo{title}{On possibility of realization {NEUTRINO-4} experiment
+  on search for oscillations of the reactor antineutrino into a sterile state}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1310.5521}
+  (\bibinfo{year}{2014}).
+
+\bibitem{POSEIDON}
+\bibinfo{author}{Derbin, A.~V.}, \bibinfo{author}{Kayunov, A.~S.} \&
+  \bibinfo{author}{N., M.~V.}
+\newblock \bibinfo{title}{Search for neutrino oscillations at a research
+  reactor}.
+\newblock \emph{\bibinfo{journal}{arXiv:}} \bibinfo{pages}{1204.2449}
+  (\bibinfo{year}{2012}).
+
+\bibitem{SoLid}
+\bibinfo{author}{Vacheret, A.} \emph{et~al.}
+\newblock \bibinfo{title}{{Status of Development of Anti-neutrino Detector
+  Systems in the UK}}.
+\newblock \bibinfo{howpublished}{Talk at the AAP 2013 workshop, Seoul, 2013}
+  (\bibinfo{year}{2013}).
+
+\bibitem{HANARO}
+\bibinfo{author}{Lee, J.}
+\newblock \bibinfo{title}{{Short BaseLine Neutrino Experiment at {Hanaro}}}.
+\newblock \bibinfo{howpublished}{Talk at the AAP 2013 workshop, Seoul, 2013}
+  (\bibinfo{year}{2013}).
+
+\bibitem{Lhuillier-Neutrino14}
+\bibinfo{author}{Lhuillier, D.}
+\newblock \bibinfo{title}{{Future Short-Baseline Sterile Neutrino Searches with
+  Reactors}}.
+\newblock \bibinfo{howpublished}{talk at the XXVI Conference on Neutrino
+  Physics and Astrophysics (Neutrino 2014)} (\bibinfo{year}{2014}).
+
+\end{thebibliography}
+
+
+\end{document}
+
+
